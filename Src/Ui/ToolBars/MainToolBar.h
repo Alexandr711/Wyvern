@@ -11,6 +11,8 @@ public:
 
 private:
 
+    QToolBar* openButton;
+    QToolBar* createButton;
 };
 
 #endif // MAINTOOLBAR_H
