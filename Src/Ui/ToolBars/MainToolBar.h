@@ -2,17 +2,22 @@
 #define MAINTOOLBAR_H
 
 #include <QToolBar>
-#include <QToolBar>
+#include <QToolButton>
 
 class MainToolBar : public QToolBar
 {
 public:
-    MainToolBar();
+    explicit MainToolBar(QWidget* parent = nullptr);
+    ~MainToolBar();
 
 private:
 
-    QToolBar* openButton;
-    QToolBar* createButton;
+    QToolButton* openButton;
+    QToolButton* createButton;
+    QToolButton* saveButton;
+    QToolButton* saveAllButton;
+    QToolButton* undoButton;
+    QToolButton* returnButton;
 };
 
 #endif // MAINTOOLBAR_H
