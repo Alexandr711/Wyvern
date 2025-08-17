@@ -10,6 +10,7 @@ add_library(UiLib STATIC MenuBar/FileMenu.h MenuBar/FileMenu.cpp
              MainWindow/MainWindow.h MainWindow/MainWindow.cpp
              ToolBars/MainToolBar.h ToolBars/MainToolBar.cpp
              Gui.h Gui.cpp
+             MenuBar/HelpMenu.h MenuBar/HelpMenu.cpp
 
 )
 
