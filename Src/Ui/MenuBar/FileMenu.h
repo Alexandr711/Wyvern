@@ -20,6 +20,4 @@ class FileMenu: public QMenu
         QMenu* openMenu;
         QAction* openFileAction;
         QAction* openProjectAction;
-
-
 };
