@@ -13,7 +13,7 @@ add_subdirectory(Src/Ui)
 
 include_directories(${CMAKE_SOURCE_DIR}/Src/Ui/MenuBar/)
 
-set(WIVERN Src/Ui/App.cpp)
+set(WIVERN Src/Ui/Ui.cpp)
 
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)

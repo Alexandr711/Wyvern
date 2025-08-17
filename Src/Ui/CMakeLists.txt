@@ -8,7 +8,9 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 add_library(UiLib STATIC MenuBar/FileMenu.h MenuBar/FileMenu.cpp
              MainWindow/MainwWndow.h MainWindow/MainWindow.cpp
-             ToolBars/MainToolBar.h ToolBars/MainToolBar.cpp)
+             ToolBars/MainToolBar.h ToolBars/MainToolBar.cpp
+             Ui.h
+)
 
 target_link_libraries(UiLib PUBLIC Qt${QT_VERSION_MAJOR}::Widgets)
 target_link_libraries(UiLib PRIVATE Qt6::Widgets)
