@@ -10,6 +10,8 @@ public:
     explicit MainToolBar(QWidget* parent = nullptr);
     ~MainToolBar();
 
+    void setItems();
+
 private:
 
     QToolButton* openButton;

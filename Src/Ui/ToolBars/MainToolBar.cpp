@@ -19,8 +19,8 @@ MainToolBar::~MainToolBar()
 void MainToolBar::setItems()
 {
     addWidget(openButton);
-    addWidget(createutton);
-    addWidget(savebutton);
+    addWidget(createButton);
+    addWidget(saveButton);
     addWidget(saveAllButton);
     addWidget(undoButton);
     addWidget(returnButton);

@@ -1,10 +1,11 @@
-#ifndef UI_H
-#define UI_H
+#ifndef GUI_H
+#define GUI_H
 
 #include <QMenuBar>
 
-#include "MainWindow/MainwWndow.h"
+#include "MainWindow/MainWindow.h"
 #include "MenuBar/FileMenu.h"
+
 #include "ToolBars/MainToolBar.h"
 
 class Gui
@@ -13,10 +14,7 @@ public:
     Gui();
     ~Gui();
 
-    void setItems();
-
-private:
-    void setMenuBarItems();
+    void show();
 
 private:
     MainWindow* mainWindow;
@@ -25,9 +23,7 @@ private:
     QMenuBar* menuBar;
     FileMenu* fileMenu;
 
-    //ToolBars
     MainToolBar* mainToolBar;
-
 };
 
-#endif // UI_H
+#endif // GUI_H
