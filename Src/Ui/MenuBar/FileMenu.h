@@ -11,6 +11,21 @@ class FileMenu: public QMenu
 
 
         void setItems();
+        void createMenuSetTitle(QString);
+        void createFileActionSetText(QString);
+        void createProjectActionSetText(QString);
+
+        void openMenuSetTitle(QString);
+        void openFileActionSetTitle(QString);
+        void openProjectAction(QString);
+
+        //Getters
+        QAction* getCreateFileAction();
+        QAction* getCreateProjectAction();
+
+        QAction* getOpenFileAction();
+        QAction* getOpenProjectAction();
+
 
     private:
         QMenu* createMenu;
