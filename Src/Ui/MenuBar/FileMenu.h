@@ -12,12 +12,12 @@ class FileMenu: public QMenu
 
         void setItems();
         void createMenuSetTitle(QString);
-        void createFileActionSetText(QString);
-        void createProjectActionSetText(QString);
+        void createFileActionSetTitle(QString);
+        void createProjectActionSetTitle(QString);
 
         void openMenuSetTitle(QString);
         void openFileActionSetTitle(QString);
-        void openProjectAction(QString);
+        void openProjectActionSetTitle(QString);
 
         //Getters
         QAction* getCreateFileAction();

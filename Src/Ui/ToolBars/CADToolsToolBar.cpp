@@ -1,6 +1,8 @@
 #include "CADToolsToolBar.h"
 
-CADToolsToolBar::CADToolsToolBar() {}
+CADToolsToolBar::CADToolsToolBar(QWidget* parent):
+    QToolBar(parent)
+{}
 
 CADToolsToolBar::~CADToolsToolBar()
 {

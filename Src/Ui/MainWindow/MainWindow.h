@@ -10,7 +10,6 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
 
 
-
 signals:
 };
 
