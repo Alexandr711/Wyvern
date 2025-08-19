@@ -3,6 +3,7 @@
 
 #include <QToolBar>
 #include <QToolButton>
+#include <QString>
 
 class MainToolBar : public QToolBar
 {
@@ -11,6 +12,20 @@ public:
     ~MainToolBar();
 
     void setItems();
+    
+    void setOpenButtonToolTipTitle(QString);
+    void setCreateButtonToolTipTitle(QString);
+    void setSaveButtonToolTipTitle(QString);
+    void setSaveAllButtonToolTipTitle(QString);
+    void setUndoButtonToolTipTitle(QString);
+    void setReturnButtonToolTipTitle(QString);
+
+    QToolButton* getOpenButton();
+    QToolButton* getCreateButton();
+    QToolButton* getSaveButton();
+    QToolButton* getSaveAllButton();
+    QToolButton* getUndoButton();
+    QToolButton* getReturnButton();
 
 private:
 

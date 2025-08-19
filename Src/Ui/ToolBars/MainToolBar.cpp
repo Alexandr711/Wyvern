@@ -25,3 +25,66 @@ void MainToolBar::setItems()
     addWidget(undoButton);
     addWidget(returnButton);
 }
+
+void MainToolBar::setOpenButtonToolTipTitle(QString title)
+{
+    openButton->setToolTip(title);
+}
+
+void MainToolBar::setCreateButtonToolTipTitle(QString title)
+{
+    createButton->setToolTip(title);
+}
+
+void MainToolBar::setSaveButtonToolTipTitle(QString title)
+{
+    saveButton->setToolTip(title);
+}
+
+void MainToolBar::setSaveAllButtonToolTipTitle(QString title)
+{
+    saveAllButton->setToolTip(title);
+}
+
+void MainToolBar::setUndoButtonToolTipTitle(QString title)
+{
+    undoButton->setToolTip(title);
+}
+
+void MainToolBar::setReturnButtonToolTipTitle(QString title)
+{
+    returnButton->setToolTip(title);
+}
+
+QToolButton* MainToolBar::getOpenButton()
+{
+    return openButton;
+}
+
+QToolButton *MainToolBar::getCreateButton()
+{
+    return createButton;
+}
+
+QToolButton *MainToolBar::getSaveButton()
+{
+    return saveButton;
+}
+
+QToolButton *MainToolBar::getSaveAllButton()
+{
+    return saveAllButton;
+}
+
+QToolButton *MainToolBar::getUndoButton()
+{
+    return undoButton;
+}
+
+QToolButton *MainToolBar::getReturnButton()
+{
+    return returnButton;
+}
+
+
+
