@@ -2,18 +2,25 @@
 
 Gui::Gui()
 {
-    mainWindow = new MainWindow();
+    mainWindow = new MainWindow;
 
-    menuBar = new QMenuBar(mainWindow);
-    fileMenu = new FileMenu(menuBar);
+    menuBar = new QMenuBar;
+    fileMenu = new FileMenu;
 
-    mainToolBar = new MainToolBar(mainWindow);
+    mainToolBar = new MainToolBar;
 
-    cadToolsToolBar = new CADToolsToolBar(mainWindow);
+    cadToolsToolBar = new CADToolsToolBar;
 }
 
 Gui::~Gui()
 {
+    delete cadToolsToolBar;
+
+    delete mainToolBar;
+
+    delete fileMenu;
+    delete menuBar;
+
     delete mainWindow;
 }
 
@@ -24,7 +31,11 @@ void Gui::setItems()
     menuBar->addMenu(fileMenu);
 
     mainWindow->addToolBar(mainToolBar);
+    mainWindow->addToolBarBreak();
     mainWindow->addToolBar(cadToolsToolBar);
+
+    mainToolBar->setItems();
+    cadToolsToolBar->setItems();
 }
 
 void Gui::show()

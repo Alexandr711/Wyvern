@@ -4,12 +4,12 @@ FileMenu::FileMenu(QWidget* parent):
     QMenu(parent)
 {
     createMenu = new QMenu(this);
-    createFileAction = new QAction(this);
-    createProjectAction = new QAction(this);
+    createFileAction = new QAction(createMenu);
+    createProjectAction = new QAction(createMenu);
 
     openMenu = new QMenu(this);
-    openFileAction = new QAction(this);
-    openProjectAction = new QAction(this);
+    openFileAction = new QAction(openMenu);
+    openProjectAction = new QAction(openMenu);
 }
 
 FileMenu::~FileMenu()

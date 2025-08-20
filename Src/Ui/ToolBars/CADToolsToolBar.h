@@ -25,7 +25,7 @@ private:
 
     QToolButton* lineButton;
     QToolButton* arcButton;
-    QToolButton* polyLineButton;
+    QToolButton* polylineButton;
     QToolButton* circleButton;
     QToolButton* rectangleButton;
 

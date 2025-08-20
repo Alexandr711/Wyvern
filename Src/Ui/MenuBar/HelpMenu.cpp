@@ -4,12 +4,12 @@ HelpMenu::HelpMenu(QWidget* parent):
     QMenu(parent)
 {
     changeLanguageMenu = new QMenu(this);
-    englishAction = new QAction(this);
-    russianAction = new QAction(this);
+    englishAction = new QAction(changeLanguageMenu);
+    russianAction = new QAction(changeLanguageMenu);
 
     changeColorThemeMenu = new QMenu(this);
-    darkColorTheme = new QAction(this);
-    lightColorTheme = new QAction(this);
+    darkColorTheme = new QAction(changeColorThemeMenu);
+    lightColorTheme = new QAction(changeColorThemeMenu);
 
     helpAction = new QAction(this);
 }

@@ -8,6 +8,7 @@ int main(int argc, char** argv)
     QApplication app(argc, argv);
 
     Gui gui;
+    gui.setItems();
     gui.show();
 
     return app.exec();
