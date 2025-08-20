@@ -5,8 +5,8 @@
 
 #include "MainWindow/MainWindow.h"
 #include "MenuBar/FileMenu.h"
-
 #include "ToolBars/MainToolBar.h"
+#include "ToolBars/CADToolsToolBar.h"
 
 class Gui
 {
@@ -25,6 +25,8 @@ private:
     FileMenu* fileMenu;
 
     MainToolBar* mainToolBar;
+
+    CADToolsToolBar* cadToolsToolBar;
 };
 
 #endif // GUI_H

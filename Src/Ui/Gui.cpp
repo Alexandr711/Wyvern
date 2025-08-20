@@ -8,6 +8,8 @@ Gui::Gui()
     fileMenu = new FileMenu(menuBar);
 
     mainToolBar = new MainToolBar(mainWindow);
+
+    cadToolsToolBar = new CADToolsToolBar(mainWindow);
 }
 
 Gui::~Gui()
@@ -21,6 +23,8 @@ void Gui::setItems()
 
     menuBar->addMenu(fileMenu);
 
+    mainWindow->addToolBar(mainToolBar);
+    mainWindow->addToolBar(cadToolsToolBar);
 }
 
 void Gui::show()

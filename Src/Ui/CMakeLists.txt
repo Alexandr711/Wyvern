@@ -5,6 +5,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 qt_standard_project_setup()
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 add_library(UiLib STATIC MenuBar/FileMenu.h MenuBar/FileMenu.cpp
              MainWindow/MainWindow.h MainWindow/MainWindow.cpp
@@ -12,8 +13,10 @@ add_library(UiLib STATIC MenuBar/FileMenu.h MenuBar/FileMenu.cpp
              Gui.h Gui.cpp
              MenuBar/HelpMenu.h MenuBar/HelpMenu.cpp
              ToolBars/CADToolsToolBar.h ToolBars/CADToolsToolBar.cpp
+             ToolBars/PlanToolsWidget.h ToolBars/PlanToolsWidget.cpp
 
 )
 
 target_link_libraries(UiLib PUBLIC Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(UiLib PRIVATE Qt6::Widgets)
 target_link_libraries(UiLib PRIVATE Qt6::Widgets)
