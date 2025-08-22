@@ -28,7 +28,9 @@ void HelpMenu::setItems()
     changeLanguageMenu->addAction(englishAction);
     changeLanguageMenu->addAction(russianAction);
     englishAction->setCheckable(true);
+    englishAction->setText("English");
     russianAction->setCheckable(true);
+    russianAction->setText("Русский");
 
     addSeparator();
     addAction(helpAction);

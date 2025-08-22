@@ -3,6 +3,7 @@
 
 #include <QMenu>
 #include <QAction>
+#include <QString>
 
 class HelpMenu: public QMenu
 {
@@ -11,6 +12,12 @@ public:
     ~HelpMenu();
 
     void setItems();
+
+    inline void changeLanguageMenuSetTitle(QString title){changeLanguageMenu->setTitle(title);}
+
+    inline void changeColorThemeMenuSetTitle(QString title){changeColorThemeMenu->setTitle(title);}
+    inline void darkColorThemeSetTitle(QString title){darkColorTheme->setText(title);}
+    inline void lightColorThemeSetTitle(QString title){lightColorTheme->setText(title);}
 
 private:
     QMenu* changeLanguageMenu;

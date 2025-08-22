@@ -40,7 +40,7 @@ void CADToolsToolBar::setItems()
     mainToolButtonLayout->addWidget(circleButton, 1, 0);
     mainToolButtonLayout->addWidget(rectangleButton, 1, 1);
 
-    mainToolButtonLayout->setSpacing(1);
+    mainToolButtonLayout->setSpacing(0);
     mainToolButtonLayout->setContentsMargins(1, 1, 1, 1);
     mainLayout->setContentsMargins(1, 1, 1, 1);
 }

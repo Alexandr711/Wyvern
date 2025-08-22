@@ -1,0 +1,34 @@
+{
+    "File": "&Файл",
+    "Create": "Создать",
+    "Create file": "Создать файл",
+    "Create project": "Создать проект",
+    "Open": "Открыть",
+    "Open file": "Открыть файл",
+    "Open project": "Открыть проект",
+    
+    "Help": "&Справка",
+    "Language": "Язык",
+    "English": "Английский",
+    "Russian": "Русский",
+    "Color theme": "Цветовая тема",
+    "Dark theme": "Темная тема",
+    "Light theme": "Светлая тема",
+    "Help action": "Справка",
+
+    "Exit": "Выход",
+
+    "Create tooltip": "Создать",
+    "Open tooltip": "Открыть",
+    "Save tooltip": "Сохранить",
+    "Save all tooltip": "Сохранить все",
+    "Undo tooltip": "Отменить",
+    "Return tooltip": "Вперед",
+
+    "Line tooltip": "Прямая линия",
+    "Arc tooltip": "Дуга",
+    "Polyline tooltip": "Полилиния",
+    "Circle tooltip": "Круг",
+    "Rectangle tooltip": "Прямоугольник"
+
+}

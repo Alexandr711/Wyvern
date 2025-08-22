@@ -14,6 +14,8 @@ add_library(UiLib STATIC MenuBar/FileMenu.h MenuBar/FileMenu.cpp
              MenuBar/HelpMenu.h MenuBar/HelpMenu.cpp
              ToolBars/CADToolsToolBar.h ToolBars/CADToolsToolBar.cpp
              ToolBars/PlanToolsWidget.h ToolBars/PlanToolsWidget.cpp
+             GuiResources.qrc
+             Settings.h Settings.cpp
 
 )
 

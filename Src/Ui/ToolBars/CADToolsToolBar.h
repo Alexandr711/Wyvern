@@ -16,6 +16,13 @@ public:
 
     void setItems();
 
+    inline void lineButtonSetTitle(QString title){lineButton->setToolTip(title);}
+    inline void arcButtonSetTitle(QString title){arcButton->setToolTip(title);}
+    inline void polylineButtonSetTitle(QString title){polylineButton->setToolTip(title);}
+    inline void circleButtonSetTitle(QString title){circleButton->setToolTip(title);}
+    inline void rectangleButtonSetTitle(QString title){rectangleButton->setToolTip(title);}
+
+
 private:
     QWidget* mainWidget;
     QHBoxLayout* mainLayout;

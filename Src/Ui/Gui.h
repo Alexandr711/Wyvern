@@ -3,10 +3,11 @@
 
 #include <QMenuBar>
 
-#include "MainWindow/MainWindow.h"
-#include "MenuBar/FileMenu.h"
-#include "ToolBars/MainToolBar.h"
-#include "ToolBars/CADToolsToolBar.h"
+class MainWindow;
+class FileMenu;
+class MainToolBar;
+class CADToolsToolBar;
+class HelpMenu;
 
 class Gui
 {
@@ -23,6 +24,7 @@ private:
     //MenuBar
     QMenuBar* menuBar;
     FileMenu* fileMenu;
+    HelpMenu* helpMenu;
 
     MainToolBar* mainToolBar;
 
