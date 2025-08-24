@@ -12,6 +12,7 @@ const unsigned int RUSSIAN = 1;
 const unsigned int DARK_COLOR = 0;
 const unsigned int LIGHT_COLOR = 1;
 
+
 namespace Ui {
 class InitialSettings;
 }

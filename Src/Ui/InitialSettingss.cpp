@@ -1,4 +1,7 @@
 #include <QApplication>
+#include <QFile>
+#include <QJsonDocument>
+#include <QJsonObject>
 
 #include "InitialSettings.h"
 #include "ui_InitialSettings.h"
@@ -51,6 +54,11 @@ void InitialSettings::setColorThemeSlot()
 
 void InitialSettings::okButtonSlot()
 {
+    QFile file("Config.json");
+    if(!file.open(QIODevice::WriteOnly))
+    {
+        qDebug() << "Can't open config file.";
+    }
 
     delete this;
 }
