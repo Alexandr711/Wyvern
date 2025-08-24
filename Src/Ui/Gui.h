@@ -8,6 +8,7 @@ class FileMenu;
 class MainToolBar;
 class CADToolsToolBar;
 class HelpMenu;
+class Settings;
 
 class Gui
 {
@@ -16,6 +17,7 @@ public:
     ~Gui();
 
     void setItems();
+    void startGui();
     void show();
 
 private:

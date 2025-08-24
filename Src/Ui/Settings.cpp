@@ -1,16 +1,25 @@
 #include "Settings.h"
 
+#include <QFile>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QDebug>
+
 Settings::Settings()
 {
-    languageSettingFile = new QFile;
+
 }
 
 Settings::~Settings()
 {
-    delete languageSettingFile;
+
 }
 
-void Settings::openJsonFile()
+void Settings::openJsonFile(QString fileName)
 {
-
+    QFile jsonFile(fileName);
+    if(!jsonFile.open(QIODevice::ReadOnly))
+    {
+        qDebug() << "Can't open " << fileName << "!";
+    }
 }

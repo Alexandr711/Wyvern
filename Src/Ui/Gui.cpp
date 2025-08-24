@@ -1,4 +1,7 @@
+#include <QFile>
+
 #include "Gui.h"
+#include "InitialSettings.h"
 #include "MainWindow/MainWindow.h"
 #include "MenuBar/FileMenu.h"
 #include "MenuBar/HelpMenu.h"
@@ -46,6 +49,17 @@ void Gui::setItems()
 
     mainToolBar->setItems();
     cadToolsToolBar->setItems();
+}
+
+void Gui::startGui()
+{
+    QFile configFile("Config.json");
+    if(!configFile.open(QIODevice::ReadOnly))
+    {
+        InitialSettings* initialSettingsWindow = new InitialSettings;
+        initialSettingsWindow->connections();
+        initialSettingsWindow->show();
+    }
 }
 
 void Gui::show()

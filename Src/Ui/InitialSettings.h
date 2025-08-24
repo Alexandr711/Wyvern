@@ -3,6 +3,15 @@
 
 #include <QWidget>
 
+
+//Languages constants
+const unsigned int ENGLISH = 0;
+const unsigned int RUSSIAN = 1;
+
+//Color theme constants
+const unsigned int DARK_COLOR = 0;
+const unsigned int LIGHT_COLOR = 1;
+
 namespace Ui {
 class InitialSettings;
 }
@@ -14,22 +23,18 @@ class InitialSettings : public QWidget
 public:
     explicit InitialSettings(QWidget *parent = nullptr);
     ~InitialSettings();
+
+    void connections();
 public slots:
     void setLanguageSlot();
     void setColorThemeSlot();
+    void okButtonSlot();
 
 private:
     Ui::InitialSettings *ui;
 
-private:
-    enum class language{
-        ENGLISH,
-        RUSSIAN
-    };
-    enum class colorTheme{
-        DARK,
-        LIGHT,
-    };
+    QString languageString;
+    QString colorThemeString;
 };
 
 #endif // INITIALSETTINGS_H
