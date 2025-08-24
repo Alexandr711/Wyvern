@@ -57,8 +57,8 @@ void Gui::startGui()
     if(!configFile.open(QIODevice::ReadOnly))
     {
         InitialSettings* initialSettingsWindow = new InitialSettings;
-        initialSettingsWindow->connections();
         initialSettingsWindow->show();
+        initialSettingsWindow->connections();
     }
 }
 
