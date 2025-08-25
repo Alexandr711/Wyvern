@@ -5,18 +5,40 @@
 
 #include "InitialSettings.h"
 #include "ui_InitialSettings.h"
+#include "Gui.h"
 
 InitialSettings::InitialSettings(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::InitialSettings)
 {
+    gui = new Gui;
     ui->setupUi(this);
 }
 
 InitialSettings::~InitialSettings()
 {
+    delete gui;
     delete ui;
     qDebug() << "Delete initial settings window.";
+}
+
+void InitialSettings::mainWindowFunc()
+{
+    gui->setItems();
+    gui->show();
+}
+
+void InitialSettings::startGui()
+{
+    QFile file("Config.json");
+    if(!file.open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+        this->show();
+    }
+    else
+    {
+        mainWindowFunc();
+    }
 }
 
 void InitialSettings::connections()
@@ -75,5 +97,6 @@ void InitialSettings::okButtonSlot()
     stream << configureJsonString;
     file.close();
 
-    delete this;
+    this->hide();
+    mainWindowFunc();
 }

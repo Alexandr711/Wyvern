@@ -3,6 +3,7 @@
 
 #include <QWidget>
 
+class Gui;
 
 //Languages constants
 const unsigned int ENGLISH = 0;
@@ -26,6 +27,9 @@ public:
     ~InitialSettings();
 
     void connections();
+    void mainWindowFunc();
+    void startGui();
+
 public slots:
     void setLanguageSlot();
     void setColorThemeSlot();
@@ -33,6 +37,7 @@ public slots:
 
 private:
     Ui::InitialSettings *ui;
+    Gui* gui;
 
     QString languageString;
     QString colorThemeString;

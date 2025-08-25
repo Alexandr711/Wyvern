@@ -17,7 +17,6 @@ public:
     ~Gui();
 
     void setItems();
-    void startGui();
     void show();
 
 private:

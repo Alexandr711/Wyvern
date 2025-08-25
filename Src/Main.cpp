@@ -1,16 +1,16 @@
 #include <QApplication>
 
 #include "Ui/Gui.h"
+#include "Ui/InitialSettings.h"
 
 
 int main(int argc, char** argv)
 {
     QApplication app(argc, argv);
 
-    Gui gui;
+    InitialSettings gui;
     gui.startGui();
-    gui.setItems();
-    gui.show();
+    gui.connections();
 
     return app.exec();
 }

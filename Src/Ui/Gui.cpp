@@ -51,16 +51,6 @@ void Gui::setItems()
     cadToolsToolBar->setItems();
 }
 
-void Gui::startGui()
-{
-    QFile configFile("Config.json");
-    if(!configFile.open(QIODevice::ReadOnly))
-    {
-        InitialSettings* initialSettingsWindow = new InitialSettings;
-        initialSettingsWindow->show();
-        initialSettingsWindow->connections();
-    }
-}
 
 void Gui::show()
 {
