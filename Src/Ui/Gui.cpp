@@ -1,5 +1,6 @@
 #include <QFile>
 #include <QJsonObject>
+#include <QFileInfo>
 
 #include "Gui.h"
 #include "InitialSettings.h"
@@ -63,11 +64,32 @@ void Gui::setTitleOnWidgets()
     QJsonObject tempJsonObject = settings->getJsonObject();
     QString languageFileName = tempJsonObject["Language"].toString();
 
+
     //Open json file whith language settings
     settings->readJsonFile(languageFileName);
     tempJsonObject = settings->getJsonObject();
 
+    QFileInfo fileInfo(languageFileName);
+    if(!fileInfo.exists())
+    {
+        qDebug() << "Файл не найден вресурсах!";
+    }
+
     fileMenu->setTitle(tempJsonObject["File"].toString());
+    fileMenu->createMenuSetTitle(tempJsonObject["Create"].toString());
+    fileMenu->createFileActionSetTitle(tempJsonObject["Create file"].toString());
+    fileMenu->createProjectActionSetTitle(tempJsonObject["Create project"].toString());
+    fileMenu->openMenuSetTitle(tempJsonObject["Open"].toString());
+    fileMenu->openFileActionSetTitle(tempJsonObject["Open file"].toString());
+    fileMenu->openProjectActionSetTitle(tempJsonObject["Open project"].toString());
+
+
+    mainToolBar->setOpenButtonToolTipTitle(tempJsonObject["Open tooltip"].toString());
+    mainToolBar->setCreateButtonToolTipTitle(tempJsonObject["Create tooltip"].toString());
+    mainToolBar->setSaveButtonToolTipTitle(tempJsonObject["Save tooltip"].toString());
+    mainToolBar->setSaveAllButtonToolTipTitle(tempJsonObject["Save all tooltip"].toString());
+    mainToolBar->setUndoButtonToolTipTitle(tempJsonObject["Undo tooltip"].toString());
+    mainToolBar->setReturnButtonToolTipTitle(tempJsonObject["Return tooltip"].toString());
 }
 
 

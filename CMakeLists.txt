@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_subdirectory(Src/Ui)
 
-include_directories(${CMAKE_SOURCE_DIR}/Src/Ui/MenuBar/)
+#include_directories(${CMAKE_SOURCE_DIR}/Src/Ui/MenuBar)
 
 set(WIVERN Src/Main.cpp)
 
@@ -20,7 +20,8 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 qt_standard_project_setup()
 
-qt_add_executable(${PROJECT_NAME} ${WIVERN})
+qt_add_executable(${PROJECT_NAME} ${WIVERN}
+    resources.qrc)
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/Src/Ui/MenuBar/)
 

@@ -17,9 +17,9 @@ Settings::~Settings()
 void Settings::readJsonFile(QString fileName)
 {
     QFile jsonFile(fileName);
-    if(!jsonFile.open(QIODevice::ReadOnly))
+    if(!jsonFile.open(QIODevice::ReadOnly | QIODevice::Text))
     {
-        qDebug() << "Can't open json file." << fileName << "!";
+        qDebug() << "Can't open json file: " << fileName << "!";
     }
     QString str;
     str = jsonFile.readAll();

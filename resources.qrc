@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/Languages">
+        <file>Src/Ui/Languages/Russian.json</file>
+    </qresource>
+</RCC>
