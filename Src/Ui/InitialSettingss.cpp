@@ -25,6 +25,7 @@ InitialSettings::~InitialSettings()
 void InitialSettings::mainWindowFunc()
 {
     gui->setItems();
+    gui->setTitleOnWidgets();
     gui->show();
 }
 

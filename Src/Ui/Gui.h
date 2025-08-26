@@ -3,6 +3,8 @@
 
 #include <QMenuBar>
 
+class Settings;
+
 class MainWindow;
 class FileMenu;
 class MainToolBar;
@@ -17,9 +19,11 @@ public:
     ~Gui();
 
     void setItems();
+    void setTitleOnWidgets();
     void show();
 
 private:
+    Settings* settings;
     MainWindow* mainWindow;
 
     //MenuBar

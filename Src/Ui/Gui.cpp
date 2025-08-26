@@ -1,4 +1,5 @@
 #include <QFile>
+#include <QJsonObject>
 
 #include "Gui.h"
 #include "InitialSettings.h"
@@ -7,9 +8,11 @@
 #include "MenuBar/HelpMenu.h"
 #include "ToolBars/MainToolBar.h"
 #include "ToolBars/CADToolsToolBar.h"
+#include "Settings.h"
 
 Gui::Gui()
 {
+    settings = new Settings;
     mainWindow = new MainWindow;
 
     menuBar = new QMenuBar;
@@ -32,6 +35,7 @@ Gui::~Gui()
     delete menuBar;
 
     delete mainWindow;
+    delete settings;
 }
 
 void Gui::setItems()
@@ -49,6 +53,21 @@ void Gui::setItems()
 
     mainToolBar->setItems();
     cadToolsToolBar->setItems();
+}
+
+void Gui::setTitleOnWidgets()
+{
+    settings->readJsonFile("Config.json");
+
+    //Open config.json file
+    QJsonObject tempJsonObject = settings->getJsonObject();
+    QString languageFileName = tempJsonObject["Language"].toString();
+
+    //Open json file whith language settings
+    settings->readJsonFile(languageFileName);
+    tempJsonObject = settings->getJsonObject();
+
+    fileMenu->setTitle(tempJsonObject["File"].toString());
 }
 
 

@@ -2,6 +2,7 @@
 #define SETTINGS_H
 
 #include <QString>
+#include <QJsonObject>
 
 class FileMenu;
 class MainToolBar;
@@ -13,11 +14,15 @@ public:
     Settings();
     ~Settings();
 
-    void openJsonFile(QString);
+    void readJsonFile(QString);
+
+    //Getters
+    QJsonObject getJsonObject();
 
 private:
     QString languageString;
     QString configString;
+    QJsonObject jsonObject;
 };
 
 #endif // SETTINGS_H
