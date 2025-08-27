@@ -8,15 +8,15 @@
     "Open project":   "Открыть проект                      Ctrl+Shift+O",
     
     "Help":           "&Справка",
-    "Language":       "Язык",
-    "English":        "Английский",
-    "Russian":        "Русский",
-    "Color theme":    "Цветовая тема",
-    "Dark theme":     "Темная тема",
-    "Light theme":    "Светлая тема",
-    "Help action":    "Справка",
+    "Language":       "Язык                            ",
+    "English":        "Английский                      ",
+    "Russian":        "Русский                         ",
+    "Color theme":    "Цветовая тема                   ",
+    "Dark theme":     "Темная тема                     ",
+    "Light theme":    "Светлая тема                    ",
+    "Help action":    "Справка                         ",
 
-    "Exit":           "Выход",
+    "Exit":           "Выход                                      Ctrl+Q",
 
     "Create tooltip": "Создать",
     "Open tooltip": "Открыть",

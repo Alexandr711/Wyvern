@@ -75,6 +75,8 @@ void Gui::setTitleOnWidgets()
         qDebug() << "Файл не найден вресурсах!";
     }
 
+    //Menu bar titles
+    //Menu "File"
     fileMenu->setTitle(tempJsonObject["File"].toString());
     fileMenu->createMenuSetTitle(tempJsonObject["Create"].toString());
     fileMenu->createFileActionSetTitle(tempJsonObject["Create file"].toString());
@@ -83,13 +85,27 @@ void Gui::setTitleOnWidgets()
     fileMenu->openFileActionSetTitle(tempJsonObject["Open file"].toString());
     fileMenu->openProjectActionSetTitle(tempJsonObject["Open project"].toString());
 
+    //Menu "Help"
+    helpMenu->setTitle(tempJsonObject["Help"].toString());
+    helpMenu->changeLanguageMenuSetTitle(tempJsonObject["Language"].toString());
+    helpMenu->changeColorThemeMenuSetTitle(tempJsonObject["Color theme"].toString());
+    helpMenu->darkColorThemeSetTitle(tempJsonObject["Dark theme"].toString());
+    helpMenu->lightColorThemeSetTitle(tempJsonObject["Light theme"].toString());
 
+    //Main ToolBar
     mainToolBar->setOpenButtonToolTipTitle(tempJsonObject["Open tooltip"].toString());
     mainToolBar->setCreateButtonToolTipTitle(tempJsonObject["Create tooltip"].toString());
     mainToolBar->setSaveButtonToolTipTitle(tempJsonObject["Save tooltip"].toString());
     mainToolBar->setSaveAllButtonToolTipTitle(tempJsonObject["Save all tooltip"].toString());
     mainToolBar->setUndoButtonToolTipTitle(tempJsonObject["Undo tooltip"].toString());
     mainToolBar->setReturnButtonToolTipTitle(tempJsonObject["Return tooltip"].toString());
+
+    //CADToolsToolBar
+    cadToolsToolBar->lineButtonSetTitle(tempJsonObject["Line tooltip"].toString());
+    cadToolsToolBar->arcButtonSetTitle(tempJsonObject["Arc tooltip"].toString());
+    cadToolsToolBar->polylineButtonSetTitle(tempJsonObject["Polyline tooltip"].toString());
+    cadToolsToolBar->circleButtonSetTitle(tempJsonObject["Circle tooltip"].toString());
+    cadToolsToolBar->rectangleButtonSetTitle(tempJsonObject["Rectangle tooltip"].toString());
 }
 
 
