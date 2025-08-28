@@ -91,6 +91,14 @@ void Gui::setTitleOnWidgets()
     helpMenu->changeColorThemeMenuSetTitle(tempJsonObject["Color theme"].toString());
     helpMenu->darkColorThemeSetTitle(tempJsonObject["Dark theme"].toString());
     helpMenu->lightColorThemeSetTitle(tempJsonObject["Light theme"].toString());
+    helpMenu->helpActionSetTitle(tempJsonObject["Help action"].toString());
+#if WIN64
+    helpMenu->systemDarkColorSetTitle(tempJsonObject["Dark Windows theme"].toString());
+    helpMenu->systemLightColorSetTitle(tempJsonObject["Light Windows theme"].toString());
+#elif __APPLE__
+    helpMenu->systemDarkColorSetTitle(tempJsonObject["Dark MacOS theme"].toString());
+    helpMenu->systemLightColorSetTitle(tempJsonObject["Light MacOS theme"].toString());
+#endif
 
     //Main ToolBar
     mainToolBar->setOpenButtonToolTipTitle(tempJsonObject["Open tooltip"].toString());
@@ -111,5 +119,5 @@ void Gui::setTitleOnWidgets()
 
 void Gui::show()
 {
-    mainWindow->show();
+    mainWindow->showMaximized();
 }

@@ -18,6 +18,9 @@ public:
     inline void changeColorThemeMenuSetTitle(QString title){changeColorThemeMenu->setTitle(title);}
     inline void darkColorThemeSetTitle(QString title){darkColorTheme->setText(title);}
     inline void lightColorThemeSetTitle(QString title){lightColorTheme->setText(title);}
+    inline void helpActionSetTitle(QString title){helpAction->setText(title);}
+    inline void systemDarkColorSetTitle(QString title){systemDarkColor->setText(title);};
+    inline void systemLightColorSetTitle(QString title){systemLightColor->setText(title);};
 
 private:
     QMenu* changeLanguageMenu;
@@ -27,6 +30,8 @@ private:
     QMenu* changeColorThemeMenu;
     QAction* darkColorTheme;
     QAction* lightColorTheme;
+    QAction* systemDarkColor;
+    QAction* systemLightColor;
 
     QAction* helpAction;
 };

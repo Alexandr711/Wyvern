@@ -8,13 +8,15 @@
     "Open project":   "Открыть проект                      Ctrl+Shift+O",
     
     "Help":           "&Справка",
-    "Language":       "Язык                            ",
-    "English":        "Английский                      ",
-    "Russian":        "Русский                         ",
-    "Color theme":    "Цветовая тема                   ",
-    "Dark theme":     "Темная тема                     ",
-    "Light theme":    "Светлая тема                    ",
-    "Help action":    "Справка                         ",
+    "Language":       "Язык                    ",
+    "Color theme":    "Цветовая тема           ",
+    "Dark theme":     "Темная тема             ",
+    "Light theme":    "Светлая тема            ",
+    "Dark Windows theme": "Темная тема Windows",
+    "Light Windows theme": "Светлая тема Windows",
+    "Dark MacOS theme": "Темная тема MacOS",
+    "Light MacOS theme": "Светлая тема MacOS",
+    "Help action":    "Помощь                    Ctrl+H",
 
     "Exit":           "Выход                                      Ctrl+Q",
 
