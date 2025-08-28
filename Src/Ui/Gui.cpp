@@ -92,12 +92,17 @@ void Gui::setTitleOnWidgets()
     helpMenu->darkColorThemeSetTitle(tempJsonObject["Dark theme"].toString());
     helpMenu->lightColorThemeSetTitle(tempJsonObject["Light theme"].toString());
     helpMenu->helpActionSetTitle(tempJsonObject["Help action"].toString());
+
 #if WIN64
+
     helpMenu->systemDarkColorSetTitle(tempJsonObject["Dark Windows theme"].toString());
     helpMenu->systemLightColorSetTitle(tempJsonObject["Light Windows theme"].toString());
+
 #elif __APPLE__
+
     helpMenu->systemDarkColorSetTitle(tempJsonObject["Dark MacOS theme"].toString());
     helpMenu->systemLightColorSetTitle(tempJsonObject["Light MacOS theme"].toString());
+
 #endif
 
     //Main ToolBar
@@ -116,8 +121,33 @@ void Gui::setTitleOnWidgets()
     cadToolsToolBar->rectangleButtonSetTitle(tempJsonObject["Rectangle tooltip"].toString());
 }
 
+void Gui::setColorTheme()
+{
+
+}
+
 
 void Gui::show()
 {
     mainWindow->showMaximized();
+}
+
+void Gui::setDarkThemeSlot()
+{
+
+}
+
+void Gui::setLightThemeSlot()
+{
+
+}
+
+void Gui::setSystemDarkThemeSlot()
+{
+
+}
+
+void Gui::setSystemLightThemeSlot()
+{
+
 }

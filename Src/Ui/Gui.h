@@ -20,7 +20,14 @@ public:
 
     void setItems();
     void setTitleOnWidgets();
+    void setColorTheme();
     void show();
+
+public slots:
+    void setDarkThemeSlot();
+    void setLightThemeSlot();
+    void setSystemDarkThemeSlot();
+    void setSystemLightThemeSlot();
 
 private:
     Settings* settings;

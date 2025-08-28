@@ -28,6 +28,16 @@ void Settings::readJsonFile(QString fileName)
     jsonObject = jsonDoc.object();
 }
 
+void Settings::writeJsonFile(QString fileName)
+{
+
+}
+
+void Settings::readQssFile(QString fileName)
+{
+
+}
+
 QJsonObject Settings::getJsonObject()
 {
     return jsonObject;

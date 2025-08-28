@@ -15,6 +15,8 @@ public:
     ~Settings();
 
     void readJsonFile(QString);
+    void writeJsonFile(QString);
+    void readQssFile(QString);
 
     //Getters
     QJsonObject getJsonObject();
