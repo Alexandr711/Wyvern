@@ -13,6 +13,14 @@ InitialSettings::InitialSettings(QWidget *parent)
 {
     gui = new Gui;
     ui->setupUi(this);
+
+    englishFlag = false;
+    russianFlag = false;
+
+    darkThemeFlag = false;
+    lightThemeFlag = false;
+    systemDarkThemeFlag = false;
+    systemLightThemeFlag = false;
 }
 
 InitialSettings::~InitialSettings()
@@ -31,6 +39,7 @@ void InitialSettings::mainWindowFunc()
 
 void InitialSettings::startGui()
 {
+    setSystemActionTitle();
     QFile file("Config.json");
     if(!file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
@@ -40,6 +49,17 @@ void InitialSettings::startGui()
     {
         mainWindowFunc();
     }
+}
+
+void InitialSettings::setSystemActionTitle()
+{
+#ifdef WIN64
+    ui->selectColorThemeComboBox->setItemText(2, "Windows Dark theme");
+    ui->selectColorThemeComboBox->setItemText(3, "Windows Light theme");
+#elif __APPLE__
+    ui->selectColorThemeComboBox->setItemText(2, "MacOS Dark theme");
+    ui->selectColorThemeComboBox->setItemText(3, "MacOS Light theme");
+#endif
 }
 
 void InitialSettings::connections()
@@ -53,13 +73,15 @@ void InitialSettings::setLanguageSlot()
     if(ui->selectLanguageComboBox->currentIndex() == ENGLISH)
     {
         languageString = "English.json";
-        qDebug() << "Set ENGLISH language.";
+        englishFlag = true;
     }
     else if(ui->selectLanguageComboBox->currentIndex() == RUSSIAN)
     {
-        languageString = "Russian.json";
-        qDebug() << "Set RUSSIAN language.";
+        languageString = ":/Languages/Src/Ui/Languages/Russian.json";
+        russianFlag = true;
     }
+
+
 }
 
 void InitialSettings::setColorThemeSlot()
@@ -67,14 +89,23 @@ void InitialSettings::setColorThemeSlot()
     if(ui->selectColorThemeComboBox->currentIndex() == DARK_COLOR)
     {
         colorThemeString = "DarkColor.json";
-        qDebug() << "Set DARK color theme.";
+        darkThemeFlag = true;
     }
     else if(ui->selectColorThemeComboBox->currentIndex() == LIGHT_COLOR)
     {
         colorThemeString = "LightColor.json";
-        qDebug() << "Set LIGHT color theme.";
+        lightThemeFlag = true;
     }
-    //else if(ui->sle)
+    else if(ui->selectColorThemeComboBox->currentIndex() == SYSTEM_DARK_COLOR)
+    {
+        colorThemeString = "WindowsDarkColor.json";
+        systemDarkThemeFlag = true;
+    }
+    else if(ui->selectColorThemeComboBox->currentIndex() == SYSTEM_LIGHT_COLOR)
+    {
+        colorThemeString = "WindowsLightColor.json";
+        systemLightThemeFlag = true;
+    }
 }
 
 void InitialSettings::okButtonSlot()
@@ -91,6 +122,13 @@ void InitialSettings::okButtonSlot()
     QJsonObject jsonRecordObject;
     jsonRecordObject.insert("Language", languageString);
     jsonRecordObject.insert("Theme", colorThemeString);
+    jsonRecordObject.insert("English flag", englishFlag);
+    jsonRecordObject.insert("Russian flag", russianFlag);
+    jsonRecordObject.insert("Dark flag", darkThemeFlag);
+    jsonRecordObject.insert("Light flag", lightThemeFlag);
+    jsonRecordObject.insert("System Dark flag", systemDarkThemeFlag);
+    jsonRecordObject.insert("System Light flag", systemLightThemeFlag);
+
 
     QJsonDocument configureJsonDocument(jsonRecordObject);
     QString configureJsonString = configureJsonDocument.toJson(QJsonDocument::Indented);
