@@ -3,6 +3,7 @@
 FileMenu::FileMenu(QWidget* parent):
     QMenu(parent)
 {
+    qDebug() << "Creating menu \"File\".";
     createMenu = new QMenu(this);
     createFileAction = new QAction(createMenu);
     createProjectAction = new QAction(createMenu);
@@ -14,7 +15,7 @@ FileMenu::FileMenu(QWidget* parent):
 
 FileMenu::~FileMenu()
 {
-
+    qDebug() << "Delete menu \"File\".";
 }
 
 void FileMenu::setItems()

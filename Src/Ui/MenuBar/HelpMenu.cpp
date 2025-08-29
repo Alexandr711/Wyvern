@@ -3,6 +3,7 @@
 HelpMenu::HelpMenu(QWidget* parent):
     QMenu(parent)
 {
+    qDebug() << "Creating menu \"Help\".";
     changeLanguageMenu = new QMenu(this);
     englishAction = new QAction(changeLanguageMenu);
     russianAction = new QAction(changeLanguageMenu);
@@ -16,7 +17,10 @@ HelpMenu::HelpMenu(QWidget* parent):
     helpAction = new QAction(this);
 }
 
-HelpMenu::~HelpMenu(){}
+HelpMenu::~HelpMenu()
+{
+    qDebug() << "Delete menu \"Help\".";
+}
 
 void HelpMenu::setItems()
 {

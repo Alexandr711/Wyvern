@@ -24,6 +24,9 @@ public:
     void show();
 
 public slots:
+    void setRussianSlot();
+    void setEnglishSlot();
+
     void setDarkThemeSlot();
     void setLightThemeSlot();
     void setSystemDarkThemeSlot();

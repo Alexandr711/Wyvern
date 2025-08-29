@@ -13,6 +13,7 @@
 
 Gui::Gui()
 {
+    qDebug() << "Creating Gui of application.";
     settings = new Settings;
     mainWindow = new MainWindow;
 
@@ -27,6 +28,7 @@ Gui::Gui()
 
 Gui::~Gui()
 {
+    qDebug() << "Delete Gui of application.";
     delete cadToolsToolBar;
 
     delete mainToolBar;
@@ -130,6 +132,16 @@ void Gui::setColorTheme()
 void Gui::show()
 {
     mainWindow->showMaximized();
+}
+
+void Gui::setRussianSlot()
+{
+
+}
+
+void Gui::setEnglishSlot()
+{
+
 }
 
 void Gui::setDarkThemeSlot()
