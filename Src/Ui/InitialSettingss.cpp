@@ -74,6 +74,7 @@ void InitialSettings::setColorThemeSlot()
         colorThemeString = "LightColor.json";
         qDebug() << "Set LIGHT color theme.";
     }
+    //else if(ui->sle)
 }
 
 void InitialSettings::okButtonSlot()

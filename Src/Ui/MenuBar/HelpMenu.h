@@ -28,8 +28,8 @@ public:
     inline QAction* systemDarkColorGet(){return systemDarkColor;}
     inline QAction* systemLightColorGet(){return systemLightColor;}
 
-    void setLanguageActions(std::vector<bool>);
-    void setColorThemeAction(std::vector<bool>);
+    void setLanguageActions();
+    void setColorThemeAction();
 
 private:
     QMenu* changeLanguageMenu;
@@ -43,14 +43,23 @@ private:
     QAction* systemLightColor;
 
     QAction* helpAction;
+
+private:
+    bool english;
+    bool russian;
+
+    bool darkTheme;
+    bool lightTheme;
+    bool systemDarkTheme;
+    bool systemLightTheme;
 };
 
-inline void HelpMenu::setLanguageActions(std::vector<bool>)
+inline void HelpMenu::setLanguageActions()
 {
 
 }
 
-inline void HelpMenu::setColorThemeAction(std::vector<bool>)
+inline void HelpMenu::setColorThemeAction()
 {
 
 }

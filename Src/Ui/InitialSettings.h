@@ -41,6 +41,14 @@ private:
 
     QString languageString;
     QString colorThemeString;
+
+    bool english;
+    bool russian;
+
+    bool darkTheme;
+    bool lightTheme;
+    bool systemDarkTheme;
+    bool systemLightTheme;
 };
 
 #endif // INITIALSETTINGS_H
