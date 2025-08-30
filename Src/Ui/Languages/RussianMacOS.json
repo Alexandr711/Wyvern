@@ -1,0 +1,36 @@
+{
+    "File":           "&Файл",
+    "Create":         "Создать                                        ",
+    "Create file":    "Создать файл                                     ⌘N",
+    "Create project": "Создать проект                              ⇧⌘N",
+    "Open":           "Открыть                                         ",
+    "Open file":      "Открыть файл                                     ⌘O",
+    "Open project":   "Открыть проект                              ⇧⌘O",
+    
+    "Help":           "&Справка",
+    "Language":       "Язык",
+    "Color theme":    "Цветовая тема",
+    "Dark theme":     "Темная тема             ",
+    "Light theme":    "Светлая тема            ",
+    "Dark Windows theme": "Темная тема Windows",
+    "Light Windows theme": "Светлая тема Windows",
+    "Dark MacOS theme": "Темная тема MacOS",
+    "Light MacOS theme": "Светлая тема MacOS",
+    "Help action":    "Помощь                               ⌘H",
+
+    "Exit":           "Выход                                           ⌘Q",
+
+    "Create tooltip": "Создать",
+    "Open tooltip": "Открыть",
+    "Save tooltip": "Сохранить",
+    "Save all tooltip": "Сохранить все",
+    "Undo tooltip": "Отменить",
+    "Return tooltip": "Вперед",
+
+    "Line tooltip": "Прямая линия",
+    "Arc tooltip": "Дуга",
+    "Polyline tooltip": "Полилиния",
+    "Circle tooltip": "Круг",
+    "Rectangle tooltip": "Прямоугольник"
+
+}

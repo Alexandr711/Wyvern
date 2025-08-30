@@ -77,7 +77,11 @@ void InitialSettings::setLanguageSlot()
     }
     else if(ui->selectLanguageComboBox->currentIndex() == RUSSIAN)
     {
+#ifdef WIN64
         languageString = ":/Languages/Src/Ui/Languages/Russian.json";
+#elif __APPLE__
+        languageString = ":/Languages/Src/Ui/Languages/RussianMacOS.json";
+#endif
         russianFlag = true;
     }
 }

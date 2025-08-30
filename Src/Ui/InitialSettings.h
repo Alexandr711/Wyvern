@@ -4,7 +4,9 @@
 #include <QAction>
 #include <QWidget>
 
+
 class Gui;
+
 
 //Languages constants
 const unsigned int ENGLISH = 0;

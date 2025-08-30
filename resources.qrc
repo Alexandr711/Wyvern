@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/Languages">
         <file>Src/Ui/Languages/Russian.json</file>
+        <file>Src/Ui/Languages/RussianMacOS.json</file>
     </qresource>
     <qresource prefix="/Images">
         <file>Src/Ui/Icons/WindowsIcons/Close48x48.png</file>
