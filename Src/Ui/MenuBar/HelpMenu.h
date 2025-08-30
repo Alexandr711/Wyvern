@@ -28,6 +28,13 @@ public:
     inline QAction* systemDarkColorGet(){return systemDarkColor;}
     inline QAction* systemLightColorGet(){return systemLightColor;}
 
+    inline void setEnglishActionFlag(bool flag){englishAction->setChecked(flag);}
+    inline void setRussianActionFlag(bool flag){russianAction->setChecked(flag);}
+    inline void setDarkThemeActionFlag(bool flag){darkColorTheme->setChecked(flag);}
+    inline void setLightThemeActionFlag(bool flag){lightColorTheme->setChecked(flag);}
+    inline void setSystemDarkThemeActionFlag(bool flag){systemDarkColor->setChecked(flag);}
+    inline void setSystemLightThemeActionFlag(bool flag){systemLightColor->setChecked(flag);}
+
     void setLanguageActions();
     void setColorThemeAction();
 

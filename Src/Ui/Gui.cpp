@@ -13,7 +13,6 @@
 
 Gui::Gui()
 {
-    qDebug() << "Creating Gui of application.";
     settings = new Settings;
     mainWindow = new MainWindow;
 
@@ -28,7 +27,6 @@ Gui::Gui()
 
 Gui::~Gui()
 {
-    qDebug() << "Delete Gui of application.";
     delete cadToolsToolBar;
 
     delete mainToolBar;
@@ -71,11 +69,7 @@ void Gui::setTitleOnWidgets()
     settings->readJsonFile(languageFileName);
     tempJsonObject = settings->getJsonObject();
 
-    QFileInfo fileInfo(languageFileName);
-    if(!fileInfo.exists())
-    {
-        qDebug() << "Файл не найден вресурсах!";
-    }
+
 
     //Menu bar titles
     //Menu "File"
@@ -106,6 +100,9 @@ void Gui::setTitleOnWidgets()
     helpMenu->systemLightColorSetTitle(tempJsonObject["Light MacOS theme"].toString());
 
 #endif
+
+    //Set flags for menu "Help"
+    helpMenu->setRussianActionFlag(tempJsonObject["Russian flag"].toBool());
 
     //Main ToolBar
     mainToolBar->setOpenButtonToolTipTitle(tempJsonObject["Open tooltip"].toString());

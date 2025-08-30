@@ -27,7 +27,6 @@ InitialSettings::~InitialSettings()
 {
     delete gui;
     delete ui;
-    qDebug() << "Delete initial settings window.";
 }
 
 void InitialSettings::mainWindowFunc()
@@ -72,7 +71,7 @@ void InitialSettings::setLanguageSlot()
 {
     if(ui->selectLanguageComboBox->currentIndex() == ENGLISH)
     {
-        languageString = "English.json";
+        languageString = ":/Languages/Src/Ui/Languages/English.json";
         englishFlag = true;
     }
     else if(ui->selectLanguageComboBox->currentIndex() == RUSSIAN)
@@ -80,8 +79,6 @@ void InitialSettings::setLanguageSlot()
         languageString = ":/Languages/Src/Ui/Languages/Russian.json";
         russianFlag = true;
     }
-
-
 }
 
 void InitialSettings::setColorThemeSlot()
