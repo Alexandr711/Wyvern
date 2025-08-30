@@ -3,13 +3,12 @@
 
 #include <QString>
 
-
 #ifdef WIN64
-QString RUSSIAN_JSON_FILE = ":/Languages/Src/Ui/Languages/Russian.json";
-QString ENGLISH_JSON_FILE = ":/Languages/Src/Ui/Languages/English.json";
+const inline QString RUSSIAN_JSON_FILE = ":/Languages/Src/Ui/Languages/Russian.json";
+const inline QString ENGLISH_JSON_FILE = ":/Languages/Src/Ui/Languages/English.json";
 #elif __APPLE__
-QString RUSSIAN_JSON_FILE = ":/Languages/Src/Ui/Languages/Russian.json";
-QString ENGLISH_JSON_FILE = ":/Languages/Src/Ui/Languages/English.json";
+const inline QString RUSSIAN_JSON_FILE = ":/Languages/Src/Ui/Languages/RussianMacOS.json";
+const inline QString ENGLISH_JSON_FILE = ":/Languages/Src/Ui/Languages/EnglishMacOS.json";
 #endif
 
 #endif // SETTINGVALUES_H

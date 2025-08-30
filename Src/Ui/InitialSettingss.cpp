@@ -6,6 +6,8 @@
 #include "InitialSettings.h"
 #include "ui_InitialSettings.h"
 #include "Gui.h"
+#include "SettingValues.h"
+
 
 InitialSettings::InitialSettings(QWidget *parent)
     : QWidget(parent)

@@ -12,6 +12,7 @@
 #include "Settings.h"
 #include "SettingValues.h"
 
+
 Gui::Gui()
 {
     settings = new Settings;
