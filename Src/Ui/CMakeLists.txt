@@ -22,6 +22,7 @@ qt_add_library(UiLib STATIC MenuBar/FileMenu.h MenuBar/FileMenu.cpp
              ToolBars/PlanToolsWidget.h ToolBars/PlanToolsWidget.cpp
              Settings.h Settings.cpp
              InitialSettings.h InitialSettingss.cpp InitialSettings.ui
+             SettingValues.h
 )
 
 

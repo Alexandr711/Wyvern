@@ -15,11 +15,14 @@ public:
     ~Settings();
 
     void readJsonFile(QString);
-    void writeConfigJsonFile();
+    void writeJsonFile(QString);
     void readQssFile(QString);
 
     //Getters
     QJsonObject getJsonObject();
+
+    //Setters
+    inline void setJsonObject(QJsonObject val){jsonObject = val;}
 
 private:
     QString languageString;

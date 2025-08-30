@@ -10,6 +10,7 @@
 #include "ToolBars/MainToolBar.h"
 #include "ToolBars/CADToolsToolBar.h"
 #include "Settings.h"
+#include "SettingValues.h"
 
 Gui::Gui()
 {
@@ -62,7 +63,6 @@ void Gui::setTitleOnWidgets()
 
     //Open config.json file
     QJsonObject configJsonObject = settings->getJsonObject();
-
 
     //Open json file whith language settings
     settings->readJsonFile(configJsonObject["Language"].toString());
@@ -151,14 +151,30 @@ void Gui::show()
 
 void Gui::setRussianSlot()
 {
-    helpMenu->setRussianActionFlag(true);
+    settings->readJsonFile("Config.json");
+    QJsonObject settingJsonObject = settings->getJsonObject();
+    settingJsonObject.insert("Language", RUSSIAN_JSON_FILE);
+    settingJsonObject.insert("English flag", false);
+    settingJsonObject.insert("Russian flag", true);
+    settings->setJsonObject(settingJsonObject);
+    settings->writeJsonFile("Config.json");
+    setTitleOnWidgets();
     helpMenu->setEnglishActionFlag(false);
+    helpMenu->setRussianActionFlag(true);
 }
 
 void Gui::setEnglishSlot()
 {
-    helpMenu->setRussianActionFlag(false);
+    settings->readJsonFile("Config.json");
+    QJsonObject settingJsonObject = settings->getJsonObject();
+    settingJsonObject.insert("Language", ENGLISH_JSON_FILE);
+    settingJsonObject.insert("Russian flag", false);
+    settingJsonObject.insert("English flag", true);
+    settings->setJsonObject(settingJsonObject);
+    settings->writeJsonFile("Config.json");
+    setTitleOnWidgets();
     helpMenu->setEnglishActionFlag(true);
+    helpMenu->setRussianActionFlag(false);
 }
 
 void Gui::setDarkThemeSlot()

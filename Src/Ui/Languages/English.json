@@ -1,3 +1,36 @@
 {
-   
+   "File":           "&File",
+    "Create":         "Create                                        ",
+    "Create file":    "Create file                          Ctrl+N",
+    "Create project": "Create project                    Ctrl+Shift+N",
+    "Open":           "Open                                         ",
+    "Open file":      "Open file                           Ctrl+O",
+    "Open project":   "Open project                     Ctrl+Shift+O",
+    
+    "Help":           "&Help",
+    "Language":       "Language                    ",
+    "Color theme":    "Color theme           ",
+    "Dark theme":     "Dark theme             ",
+    "Light theme":    "Light theme            ",
+    "Dark Windows theme": "Dark theme Windows",
+    "Light Windows theme": "Light theme Windows",
+    "Dark MacOS theme": "Dark theme MacOS",
+    "Light MacOS theme": "Light theme MacOS",
+    "Help action":    "Help                    Ctrl+H",
+
+    "Exit":           "Quit                                     Ctrl+Q",
+
+    "Create tooltip": "Create",
+    "Open tooltip": "Open",
+    "Save tooltip": "Save",
+    "Save all tooltip": "SaveAll",
+    "Undo tooltip": "Undo",
+    "Return tooltip": "Redo",
+
+    "Line tooltip": "Line",
+    "Arc tooltip": "Arc",
+    "Polyline tooltip": "Polyline",
+    "Circle tooltip": "Circle",
+    "Rectangle tooltip": "Rectangle"
+
 }

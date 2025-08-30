@@ -73,16 +73,12 @@ void InitialSettings::setLanguageSlot()
 {
     if(ui->selectLanguageComboBox->currentIndex() == ENGLISH)
     {
-        languageString = ":/Languages/Src/Ui/Languages/English.json";
+        languageString = ENGLISH_JSON_FILE;
         englishFlag = true;
     }
     else if(ui->selectLanguageComboBox->currentIndex() == RUSSIAN)
     {
-#ifdef WIN64
-        languageString = ":/Languages/Src/Ui/Languages/Russian.json";
-#elif __APPLE__
-        languageString = ":/Languages/Src/Ui/Languages/RussianMacOS.json";
-#endif
+        languageString = RUSSIAN_JSON_FILE;
         russianFlag = true;
     }
 }

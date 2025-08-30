@@ -28,9 +28,9 @@ void Settings::readJsonFile(QString fileName)
     jsonObject = jsonDoc.object();
 }
 
-void Settings::writeConfigJsonFile()
+void Settings::writeJsonFile(QString fileName)
 {
-    QFile file("Config.json");
+    QFile file(fileName);
     if(!file.open(QIODevice::WriteOnly | QIODevice::Text))
     {
         qDebug() << "Can't open config file.";
