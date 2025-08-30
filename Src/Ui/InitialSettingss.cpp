@@ -33,6 +33,7 @@ void InitialSettings::mainWindowFunc()
 {
     gui->setItems();
     gui->setTitleOnWidgets();
+    gui->setFlags();
     gui->show();
 }
 

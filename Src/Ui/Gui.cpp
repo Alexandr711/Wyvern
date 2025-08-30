@@ -61,13 +61,12 @@ void Gui::setTitleOnWidgets()
     settings->readJsonFile("Config.json");
 
     //Open config.json file
-    QJsonObject tempJsonObject = settings->getJsonObject();
-    QString languageFileName = tempJsonObject["Language"].toString();
+    QJsonObject configJsonObject = settings->getJsonObject();
 
 
     //Open json file whith language settings
-    settings->readJsonFile(languageFileName);
-    tempJsonObject = settings->getJsonObject();
+    settings->readJsonFile(configJsonObject["Language"].toString());
+    QJsonObject tempJsonObject = settings->getJsonObject();
 
 
 
@@ -101,9 +100,6 @@ void Gui::setTitleOnWidgets()
 
 #endif
 
-    //Set flags for menu "Help"
-    helpMenu->setRussianActionFlag(tempJsonObject["Russian flag"].toBool());
-
     //Main ToolBar
     mainToolBar->setOpenButtonToolTipTitle(tempJsonObject["Open tooltip"].toString());
     mainToolBar->setCreateButtonToolTipTitle(tempJsonObject["Create tooltip"].toString());
@@ -123,6 +119,22 @@ void Gui::setTitleOnWidgets()
 void Gui::setColorTheme()
 {
 
+}
+
+void Gui::setFlags()
+{
+    settings->readJsonFile("Config.json");
+
+    //Open config.json file
+    QJsonObject configJsonObject = settings->getJsonObject();
+
+    //Set flags for menu "Help"
+    helpMenu->setRussianActionFlag(configJsonObject["Russian flag"].toBool());
+    helpMenu->setEnglishActionFlag(configJsonObject["English flag"].toBool());
+    helpMenu->setDarkThemeActionFlag(configJsonObject["Dark flag"].toBool());
+    helpMenu->setLightThemeActionFlag(configJsonObject["Light flag"].toBool());
+    helpMenu->setSystemDarkThemeActionFlag(configJsonObject["System Dark flag"].toBool());
+    helpMenu->setSystemLightThemeActionFlag(configJsonObject["System Light flagg"].toBool());
 }
 
 

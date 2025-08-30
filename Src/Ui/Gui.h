@@ -21,6 +21,7 @@ public:
     void setItems();
     void setTitleOnWidgets();
     void setColorTheme();
+    void setFlags();
     void show();
 
 public slots:
