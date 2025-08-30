@@ -15,7 +15,7 @@ public:
     ~Settings();
 
     void readJsonFile(QString);
-    void writeConfigJsonFile(QString);
+    void writeConfigJsonFile();
     void readQssFile(QString);
 
     //Getters

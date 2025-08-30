@@ -137,6 +137,12 @@ void Gui::setFlags()
     helpMenu->setSystemLightThemeActionFlag(configJsonObject["System Light flagg"].toBool());
 }
 
+void Gui::connections()
+{
+    connect(helpMenu->russianActionGet(), SIGNAL(triggered(bool)), this, SLOT(setRussianSlot()));
+    connect(helpMenu->englishActionGet(), SIGNAL(triggered(bool)), this, SLOT(setEnglishSlot()));
+}
+
 
 void Gui::show()
 {
@@ -145,12 +151,14 @@ void Gui::show()
 
 void Gui::setRussianSlot()
 {
-
+    helpMenu->setRussianActionFlag(true);
+    helpMenu->setEnglishActionFlag(false);
 }
 
 void Gui::setEnglishSlot()
 {
-
+    helpMenu->setRussianActionFlag(false);
+    helpMenu->setEnglishActionFlag(true);
 }
 
 void Gui::setDarkThemeSlot()

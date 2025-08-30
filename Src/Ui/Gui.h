@@ -2,6 +2,7 @@
 #define GUI_H
 
 #include <QMenuBar>
+#include <QObject>
 
 class Settings;
 
@@ -12,8 +13,9 @@ class CADToolsToolBar;
 class HelpMenu;
 class Settings;
 
-class Gui
+class Gui: QObject
 {
+    Q_OBJECT
 public:
     Gui();
     ~Gui();
@@ -22,6 +24,7 @@ public:
     void setTitleOnWidgets();
     void setColorTheme();
     void setFlags();
+    void connections();
     void show();
 
 public slots:

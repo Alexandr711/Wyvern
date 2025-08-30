@@ -31,6 +31,7 @@ InitialSettings::~InitialSettings()
 
 void InitialSettings::mainWindowFunc()
 {
+    gui->connections();
     gui->setItems();
     gui->setTitleOnWidgets();
     gui->setFlags();
