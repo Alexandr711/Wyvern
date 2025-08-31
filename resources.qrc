@@ -43,5 +43,6 @@
         <file>Src/Ui/Styles/MacOSLightStyle/MacOSLightStyle.json</file>
         <file>Src/Ui/Styles/LightStyle/LightStyle.json</file>
         <file>Src/Ui/Styles/MacOSDarkStyle/MacOSDarkStyle.json</file>
+        <file>Src/Ui/Styles/DarkStyle/MainToolBar.qss</file>
     </qresource>
 </RCC>

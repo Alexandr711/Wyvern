@@ -1,6 +1,17 @@
 QToolBar
 {
-  
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+}
+
+QToolButton:hover
+{
+    background-color:#626262
+}
+
+QToolButton:pressed
+{
+    background-color: #2e2e2e;
 }
 
 QToolButton#openButton

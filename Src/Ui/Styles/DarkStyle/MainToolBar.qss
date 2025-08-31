@@ -1,0 +1,54 @@
+QToolBar
+{
+    background-color: #181818;
+    border-color: none;
+}
+
+QToolButton
+{
+    background-color:#181818;
+    border: none;             
+    padding: 2px 2px;        /* Отступы */
+    border-radius: 5px;        /* Закругление углов */
+}
+
+QToolButton:hover
+{
+    background-color:#37373d;
+}
+
+QToolButton:pressed
+{
+    background-color: #1f1f1f;
+}
+
+QToolButton#openButton
+{
+    qproperty-icon: url(":/Images/Src/Ui/Icons/DarkColorIcons/Folder.png");
+}
+
+QToolButton#createButton
+{
+    qproperty-icon: url(":/Images/Src/Ui/Icons/DarkColorIcons/Document.png");
+}
+
+QToolButton#saveButton
+{
+    qproperty-icon: url(":/Images/Src/Ui/Icons/DarkColorIcons/Save.png");
+}
+
+QToolButton#saveAllButton
+{
+    qproperty-icon: url(":/Images/Src/Ui/Icons/DarkColorIcons/SaveAll.png");
+}
+
+QToolButton#undoButton
+{
+    qproperty-icon: url(":/Images/Src/Ui/Icons/DarkColorIcons/Undo.png");
+}
+
+QToolButton#returnButton
+{
+    qproperty-icon: url(":/Images/Src/Ui/Icons/DarkColorIcons/Redo.png");
+}
+
