@@ -3,7 +3,6 @@
 #include <QFileInfo>
 
 #include "Gui.h"
-#include "InitialSettings.h"
 #include "MainWindow/MainWindow.h"
 #include "MenuBar/FileMenu.h"
 #include "MenuBar/HelpMenu.h"
@@ -117,10 +116,7 @@ void Gui::setTitleOnWidgets()
     cadToolsToolBar->rectangleButtonSetTitle(tempJsonObject["Rectangle tooltip"].toString());
 }
 
-void Gui::setColorTheme()
-{
 
-}
 
 void Gui::setFlags()
 {
@@ -140,8 +136,30 @@ void Gui::setFlags()
 
 void Gui::connections()
 {
+    //Connect for change languages
     connect(helpMenu->russianActionGet(), SIGNAL(triggered(bool)), this, SLOT(setRussianSlot()));
     connect(helpMenu->englishActionGet(), SIGNAL(triggered(bool)), this, SLOT(setEnglishSlot()));
+    //Connect for change color theme
+    connect(helpMenu->systemDarkColorGet(), SIGNAL(triggered(bool)), this, SLOT(setSystemDarkThemeSlot()));
+    connect(helpMenu->systemLightColorGet(), SIGNAL(triggered(bool)), this, SLOT(setSystemLightThemeSlot()));
+    connect(helpMenu->darkColorThemeGet(), SIGNAL(triggered(bool)), this, SLOT(setDarkThemeSlot()));
+    connect(helpMenu->lightColorThemeGet(), SIGNAL(triggered(bool)), this, SLOT(setLightThemeSlot()));
+}
+
+void Gui::setColorTheme()
+{
+    //Open config file
+    settings->readJsonFile("Config.json");
+    QJsonObject configJsonObject = settings->getJsonObject();
+    QString colorThemeFileString = configJsonObject["Theme"].toString();
+
+    //Open color theme file
+    settings->readJsonFile(colorThemeFileString);
+    configJsonObject = settings->getJsonObject();
+
+
+    //Set style sheets
+    mainToolBar->setStyleSheet(QString(settings->readQssFile(configJsonObject["MainToolBar"].toString())));
 }
 
 
@@ -180,20 +198,68 @@ void Gui::setEnglishSlot()
 
 void Gui::setDarkThemeSlot()
 {
-
+    settings->readJsonFile("Config.json");
+    QJsonObject settingJsonObject = settings->getJsonObject();
+    settingJsonObject.insert("Theme", ":/ColorThemes/Src/Ui/Styles/WindowsDarkStyle/WindowsDarkTheme.json");
+    settingJsonObject.insert("Light flag", false);
+    settingJsonObject.insert("Dark flag", true);
+    settingJsonObject.insert("System Light flag", false);
+    settingJsonObject.insert("System Dark flag", false);
+    settings->setJsonObject(settingJsonObject);
+    setColorTheme();
+    helpMenu->setSystemDarkThemeActionFlag(false);
+    helpMenu->setSystemLightThemeActionFlag(false);
+    helpMenu->setDarkThemeActionFlag(true);
+    helpMenu->setLightThemeActionFlag(false);
 }
 
 void Gui::setLightThemeSlot()
 {
-
+    settings->readJsonFile("Config.json");
+    QJsonObject settingJsonObject = settings->getJsonObject();
+    settingJsonObject.insert("Theme", ":/ColorThemes/Src/Ui/Styles/WindowsDarkStyle/WindowsDarkTheme.json");
+    settingJsonObject.insert("Light flag", true);
+    settingJsonObject.insert("Dark flag", false);
+    settingJsonObject.insert("System Light flag", false);
+    settingJsonObject.insert("System Dark flag", false);
+    settings->setJsonObject(settingJsonObject);
+    setColorTheme();
+    helpMenu->setSystemDarkThemeActionFlag(false);
+    helpMenu->setSystemLightThemeActionFlag(false);
+    helpMenu->setDarkThemeActionFlag(false);
+    helpMenu->setLightThemeActionFlag(true);
 }
 
 void Gui::setSystemDarkThemeSlot()
 {
-
+    settings->readJsonFile("Config.json");
+    QJsonObject settingJsonObject = settings->getJsonObject();
+    settingJsonObject.insert("Theme", ":/ColorThemes/Src/Ui/Styles/WindowsDarkStyle/WindowsDarkTheme.json");
+    settingJsonObject.insert("Light flag", false);
+    settingJsonObject.insert("Dark flag", false);
+    settingJsonObject.insert("System Light flag", false);
+    settingJsonObject.insert("System Dark flag", true);
+    settings->setJsonObject(settingJsonObject);
+    setColorTheme();
+    helpMenu->setSystemDarkThemeActionFlag(true);
+    helpMenu->setSystemLightThemeActionFlag(false);
+    helpMenu->setDarkThemeActionFlag(false);
+    helpMenu->setLightThemeActionFlag(false);
 }
 
 void Gui::setSystemLightThemeSlot()
 {
-
+    settings->readJsonFile("Config.json");
+    QJsonObject settingJsonObject = settings->getJsonObject();
+    settingJsonObject.insert("Theme", ":/ColorThemes/Src/Ui/Styles/WindowsDarkStyle/WindowsDarkTheme.json");
+    settingJsonObject.insert("Light flag", false);
+    settingJsonObject.insert("Dark flag", false);
+    settingJsonObject.insert("System Light flag", true);
+    settingJsonObject.insert("System Dark flag", false);
+    settings->setJsonObject(settingJsonObject);
+    setColorTheme();
+    helpMenu->setSystemDarkThemeActionFlag(false);
+    helpMenu->setSystemLightThemeActionFlag(true);
+    helpMenu->setDarkThemeActionFlag(false);
+    helpMenu->setLightThemeActionFlag(false);
 }

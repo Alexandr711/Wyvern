@@ -3,6 +3,7 @@
 
 #include <QAction>
 #include <QWidget>
+#include <QString>
 
 
 class Gui;

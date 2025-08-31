@@ -16,7 +16,7 @@ public:
 
     void readJsonFile(QString);
     void writeJsonFile(QString);
-    void readQssFile(QString);
+    QString readQssFile(QString);
 
     //Getters
     QJsonObject getJsonObject();

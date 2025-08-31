@@ -1,0 +1,35 @@
+QToolBar
+{
+  
+}
+
+QToolButton#openButton
+{
+    qproperty-icon: url(":/Images/Src/Ui/Icons/WindowsIcons/Folder48x48.png");
+}
+
+QToolButton#createButton
+{
+    qproperty-icon: url(":/Images/Src/Ui/Icons/WindowsIcons/Document48x48.png");
+}
+
+QToolButton#saveButton
+{
+    qproperty-icon: url(":/Images/Src/Ui/Icons/WindowsIcons/Save48x48.png");
+}
+
+QToolButton#saveAllButton
+{
+    qproperty-icon: url(":/Images/Src/Ui/Icons/WindowsIcons/SaveAll48x48.png");
+}
+
+QToolButton#undoButton
+{
+    qproperty-icon: url(":/Images/Src/Ui/Icons/WindowsIcons/Undo48x48.png");
+}
+
+QToolButton#returnButton
+{
+    qproperty-icon: url(":/Images/Src/Ui/Icons/WindowsIcons/Redo48x48.png");
+}
+

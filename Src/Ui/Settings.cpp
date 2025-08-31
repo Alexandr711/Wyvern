@@ -44,9 +44,15 @@ void Settings::writeJsonFile(QString fileName)
     file.close();
 }
 
-void Settings::readQssFile(QString fileName)
+QString Settings::readQssFile(QString fileName)
 {
-
+    QFile qssFile(fileName);
+    if(!qssFile.open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+        qDebug() << "Can't open " << fileName << "file!";
+    }
+    QString tempString = qssFile.readAll();
+    return tempString;
 }
 
 QJsonObject Settings::getJsonObject()

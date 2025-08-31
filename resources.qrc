@@ -35,4 +35,13 @@
         <file>Src/Ui/Icons/DarkColorIcons/Settings.png</file>
         <file>Src/Ui/Icons/DarkColorIcons/Undo.png</file>
     </qresource>
+    <qresource prefix="/ColorThemes">
+        <file>Src/Ui/Styles/WindowsDarkStyle/MainToolBar.qss</file>
+        <file>Src/Ui/Styles/DarkStyle/DarkStyle.json</file>
+        <file>Src/Ui/Styles/WIndowsLightStyle/WindowsLightTheme.json</file>
+        <file>Src/Ui/Styles/WindowsDarkStyle/WindowsDarkTheme.json</file>
+        <file>Src/Ui/Styles/MacOSLightStyle/MacOSLightStyle.json</file>
+        <file>Src/Ui/Styles/LightStyle/LightStyle.json</file>
+        <file>Src/Ui/Styles/MacOSDarkStyle/MacOSDarkStyle.json</file>
+    </qresource>
 </RCC>

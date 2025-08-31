@@ -9,6 +9,13 @@ MainToolBar::MainToolBar(QWidget* parent):
     saveAllButton = new QToolButton(this);
     undoButton = new QToolButton(this);
     returnButton = new QToolButton(this);
+
+    openButton->setObjectName("openButton");
+    createButton->setObjectName("createButton");
+    saveButton->setObjectName("saveButton");
+    saveAllButton->setObjectName("saveAllButton");
+    undoButton->setObjectName("undoButton");
+    returnButton->setObjectName("returnButton");
 }
 
 MainToolBar::~MainToolBar()

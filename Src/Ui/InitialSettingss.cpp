@@ -34,6 +34,7 @@ InitialSettings::~InitialSettings()
 void InitialSettings::mainWindowFunc()
 {
     gui->connections();
+    gui->setColorTheme();
     gui->setItems();
     gui->setTitleOnWidgets();
     gui->setFlags();
@@ -89,22 +90,22 @@ void InitialSettings::setColorThemeSlot()
 {
     if(ui->selectColorThemeComboBox->currentIndex() == DARK_COLOR)
     {
-        colorThemeString = "DarkColor.json";
+        colorThemeString = ":/ColorThemes/Src/Ui/Styles/DarkStyle/DarkStyle.json";
         darkThemeFlag = true;
     }
     else if(ui->selectColorThemeComboBox->currentIndex() == LIGHT_COLOR)
     {
-        colorThemeString = "LightColor.json";
+        colorThemeString = ":/ColorThemes/Src/Ui/Styles/LightStyle/LightStyle.json";
         lightThemeFlag = true;
     }
     else if(ui->selectColorThemeComboBox->currentIndex() == SYSTEM_DARK_COLOR)
     {
-        colorThemeString = "WindowsDarkColor.json";
+        colorThemeString = SYSTEM_DARK_COLOR_STRING;
         systemDarkThemeFlag = true;
     }
     else if(ui->selectColorThemeComboBox->currentIndex() == SYSTEM_LIGHT_COLOR)
     {
-        colorThemeString = "WindowsLightColor.json";
+        colorThemeString = SYSTEM_LIGHT_COLOR_STRING;
         systemLightThemeFlag = true;
     }
 }
