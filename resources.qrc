@@ -4,44 +4,10 @@
         <file>Src/Ui/Languages/RussianMacOS.json</file>
         <file>Src/Ui/Languages/English.json</file>
     </qresource>
-    <qresource prefix="/Images">
-        <file>Src/Ui/Icons/WindowsIcons/Close48x48.png</file>
-        <file>Src/Ui/Icons/WindowsIcons/Document48x48.png</file>
-        <file>Src/Ui/Icons/WindowsIcons/Folder48x48.png</file>
-        <file>Src/Ui/Icons/WindowsIcons/icons8-cancel-48.png</file>
-        <file>Src/Ui/Icons/WindowsIcons/Language48x48.png</file>
-        <file>Src/Ui/Icons/WindowsIcons/Redo48x48.png</file>
-        <file>Src/Ui/Icons/WindowsIcons/Save48x48.png</file>
-        <file>Src/Ui/Icons/WindowsIcons/SaveAll48x48.png</file>
-        <file>Src/Ui/Icons/WindowsIcons/SaveAs48x48.png</file>
-        <file>Src/Ui/Icons/WindowsIcons/Settings48x48.png</file>
-        <file>Src/Ui/Icons/WindowsIcons/Undo48x48.png</file>
-        <file>Src/Ui/Icons/LightColorIcons/Document.png</file>
-        <file>Src/Ui/Icons/LightColorIcons/Folder.png</file>
-        <file>Src/Ui/Icons/LightColorIcons/OpenedFolder.png</file>
-        <file>Src/Ui/Icons/LightColorIcons/Quit.png</file>
-        <file>Src/Ui/Icons/LightColorIcons/Redo.png</file>
-        <file>Src/Ui/Icons/LightColorIcons/Save.png</file>
-        <file>Src/Ui/Icons/LightColorIcons/SaveAll.png</file>
-        <file>Src/Ui/Icons/LightColorIcons/Settings.png</file>
-        <file>Src/Ui/Icons/LightColorIcons/Undo.png</file>
-        <file>Src/Ui/Icons/DarkColorIcons/Folder.png</file>
-        <file>Src/Ui/Icons/DarkColorIcons/OpenedFolder.png</file>
-        <file>Src/Ui/Icons/DarkColorIcons/Quit.png</file>
-        <file>Src/Ui/Icons/DarkColorIcons/Redo.png</file>
-        <file>Src/Ui/Icons/DarkColorIcons/Save.png</file>
-        <file>Src/Ui/Icons/DarkColorIcons/SaveAll.png</file>
-        <file>Src/Ui/Icons/DarkColorIcons/Settings.png</file>
-        <file>Src/Ui/Icons/DarkColorIcons/Undo.png</file>
-    </qresource>
+    <qresource prefix="/Images"/>
     <qresource prefix="/ColorThemes">
-        <file>Src/Ui/Styles/WindowsDarkStyle/MainToolBar.qss</file>
         <file>Src/Ui/Styles/DarkStyle/DarkStyle.json</file>
-        <file>Src/Ui/Styles/WIndowsLightStyle/WindowsLightTheme.json</file>
-        <file>Src/Ui/Styles/WindowsDarkStyle/WindowsDarkTheme.json</file>
-        <file>Src/Ui/Styles/MacOSLightStyle/MacOSLightStyle.json</file>
         <file>Src/Ui/Styles/LightStyle/LightStyle.json</file>
-        <file>Src/Ui/Styles/MacOSDarkStyle/MacOSDarkStyle.json</file>
         <file>Src/Ui/Styles/DarkStyle/MainToolBar.qss</file>
     </qresource>
 </RCC>
