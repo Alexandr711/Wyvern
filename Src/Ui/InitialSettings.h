@@ -16,8 +16,7 @@ const unsigned int RUSSIAN = 1;
 //Color theme constants
 const unsigned int DARK_COLOR = 0;
 const unsigned int LIGHT_COLOR = 1;
-const unsigned int SYSTEM_DARK_COLOR = 2;
-const unsigned int SYSTEM_LIGHT_COLOR = 3;
+
 
 
 
@@ -36,7 +35,6 @@ public:
     void connections();
     void mainWindowFunc();
     void startGui();
-    void setSystemActionTitle();
 
 public slots:
     void setLanguageSlot();

@@ -88,17 +88,6 @@ void Gui::setTitleOnWidgets()
     helpMenu->lightColorThemeSetTitle(tempJsonObject["Light theme"].toString());
     helpMenu->helpActionSetTitle(tempJsonObject["Help action"].toString());
 
-#if WIN64
-
-    helpMenu->systemDarkColorSetTitle(tempJsonObject["Dark Windows theme"].toString());
-    helpMenu->systemLightColorSetTitle(tempJsonObject["Light Windows theme"].toString());
-
-#elif __APPLE__
-
-    helpMenu->systemDarkColorSetTitle(tempJsonObject["Dark MacOS theme"].toString());
-    helpMenu->systemLightColorSetTitle(tempJsonObject["Light MacOS theme"].toString());
-
-#endif
 
     //Main ToolBar
     mainToolBar->setOpenButtonToolTipTitle(tempJsonObject["Open tooltip"].toString());
@@ -130,8 +119,6 @@ void Gui::setFlags()
     helpMenu->setEnglishActionFlag(configJsonObject["English flag"].toBool());
     helpMenu->setDarkThemeActionFlag(configJsonObject["Dark flag"].toBool());
     helpMenu->setLightThemeActionFlag(configJsonObject["Light flag"].toBool());
-    helpMenu->setSystemDarkThemeActionFlag(configJsonObject["System Dark flag"].toBool());
-    helpMenu->setSystemLightThemeActionFlag(configJsonObject["System Light flag"].toBool());
 }
 
 void Gui::connections()
@@ -140,8 +127,6 @@ void Gui::connections()
     connect(helpMenu->russianActionGet(), SIGNAL(triggered(bool)), this, SLOT(setRussianSlot()));
     connect(helpMenu->englishActionGet(), SIGNAL(triggered(bool)), this, SLOT(setEnglishSlot()));
     //Connect for change color theme
-    connect(helpMenu->systemDarkColorGet(), SIGNAL(triggered(bool)), this, SLOT(setSystemDarkThemeSlot()));
-    connect(helpMenu->systemLightColorGet(), SIGNAL(triggered(bool)), this, SLOT(setSystemLightThemeSlot()));
     connect(helpMenu->darkColorThemeGet(), SIGNAL(triggered(bool)), this, SLOT(setDarkThemeSlot()));
     connect(helpMenu->lightColorThemeGet(), SIGNAL(triggered(bool)), this, SLOT(setLightThemeSlot()));
 }
@@ -203,13 +188,9 @@ void Gui::setDarkThemeSlot()
     settingJsonObject.insert("Theme", ":/ColorThemes/Src/Ui/Styles/DarkStyle/DarkStyle.json");
     settingJsonObject.insert("Light flag", false);
     settingJsonObject.insert("Dark flag", true);
-    settingJsonObject.insert("System Light flag", false);
-    settingJsonObject.insert("System Dark flag", false);
     settings->setJsonObject(settingJsonObject);
     settings->writeJsonFile("Config.json");
     setColorTheme();
-    helpMenu->setSystemDarkThemeActionFlag(false);
-    helpMenu->setSystemLightThemeActionFlag(false);
     helpMenu->setDarkThemeActionFlag(true);
     helpMenu->setLightThemeActionFlag(false);
 }
@@ -221,49 +202,9 @@ void Gui::setLightThemeSlot()
     settingJsonObject.insert("Theme", ":/ColorThemes/Src/Ui/Styles/LightStyle/LightStyle.json");
     settingJsonObject.insert("Light flag", true);
     settingJsonObject.insert("Dark flag", false);
-    settingJsonObject.insert("System Light flag", false);
-    settingJsonObject.insert("System Dark flag", false);
     settings->setJsonObject(settingJsonObject);
     settings->writeJsonFile("Config.json");
     setColorTheme();
-    helpMenu->setSystemDarkThemeActionFlag(false);
-    helpMenu->setSystemLightThemeActionFlag(false);
     helpMenu->setDarkThemeActionFlag(false);
     helpMenu->setLightThemeActionFlag(true);
-}
-
-void Gui::setSystemDarkThemeSlot()
-{
-    settings->readJsonFile("Config.json");
-    QJsonObject settingJsonObject = settings->getJsonObject();
-    settingJsonObject.insert("Theme", SYSTEM_DARK_COLOR_STRING);
-    settingJsonObject.insert("Light flag", false);
-    settingJsonObject.insert("Dark flag", false);
-    settingJsonObject.insert("System Light flag", false);
-    settingJsonObject.insert("System Dark flag", true);
-    settings->setJsonObject(settingJsonObject);
-    settings->writeJsonFile("Config.json");
-    setColorTheme();
-    helpMenu->setSystemDarkThemeActionFlag(true);
-    helpMenu->setSystemLightThemeActionFlag(false);
-    helpMenu->setDarkThemeActionFlag(false);
-    helpMenu->setLightThemeActionFlag(false);
-}
-
-void Gui::setSystemLightThemeSlot()
-{
-    settings->readJsonFile("Config.json");
-    QJsonObject settingJsonObject = settings->getJsonObject();
-    settingJsonObject.insert("Theme", SYSTEM_LIGHT_COLOR_STRING);
-    settingJsonObject.insert("Light flag", false);
-    settingJsonObject.insert("Dark flag", false);
-    settingJsonObject.insert("System Light flag", true);
-    settingJsonObject.insert("System Dark flag", false);
-    settings->setJsonObject(settingJsonObject);
-    settings->writeJsonFile("Config.json");
-    setColorTheme();
-    helpMenu->setSystemDarkThemeActionFlag(false);
-    helpMenu->setSystemLightThemeActionFlag(true);
-    helpMenu->setDarkThemeActionFlag(false);
-    helpMenu->setLightThemeActionFlag(false);
 }

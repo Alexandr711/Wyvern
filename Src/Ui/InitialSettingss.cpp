@@ -43,7 +43,6 @@ void InitialSettings::mainWindowFunc()
 
 void InitialSettings::startGui()
 {
-    setSystemActionTitle();
     QFile file("Config.json");
     if(!file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
@@ -55,16 +54,7 @@ void InitialSettings::startGui()
     }
 }
 
-void InitialSettings::setSystemActionTitle()
-{
-#ifdef WIN64
-    ui->selectColorThemeComboBox->setItemText(2, "Windows Dark theme");
-    ui->selectColorThemeComboBox->setItemText(3, "Windows Light theme");
-#elif __APPLE__
-    ui->selectColorThemeComboBox->setItemText(2, "MacOS Dark theme");
-    ui->selectColorThemeComboBox->setItemText(3, "MacOS Light theme");
-#endif
-}
+
 
 void InitialSettings::connections()
 {
@@ -98,16 +88,6 @@ void InitialSettings::setColorThemeSlot()
         colorThemeString = ":/ColorThemes/Src/Ui/Styles/LightStyle/LightStyle.json";
         lightThemeFlag = true;
     }
-    else if(ui->selectColorThemeComboBox->currentIndex() == SYSTEM_DARK_COLOR)
-    {
-        colorThemeString = SYSTEM_DARK_COLOR_STRING;
-        systemDarkThemeFlag = true;
-    }
-    else if(ui->selectColorThemeComboBox->currentIndex() == SYSTEM_LIGHT_COLOR)
-    {
-        colorThemeString = SYSTEM_LIGHT_COLOR_STRING;
-        systemLightThemeFlag = true;
-    }
 }
 
 void InitialSettings::okButtonSlot()
@@ -128,8 +108,6 @@ void InitialSettings::okButtonSlot()
     jsonRecordObject.insert("Russian flag", russianFlag);
     jsonRecordObject.insert("Dark flag", darkThemeFlag);
     jsonRecordObject.insert("Light flag", lightThemeFlag);
-    jsonRecordObject.insert("System Dark flag", systemDarkThemeFlag);
-    jsonRecordObject.insert("System Light flag", systemLightThemeFlag);
 
 
     QJsonDocument configureJsonDocument(jsonRecordObject);

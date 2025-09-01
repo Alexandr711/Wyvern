@@ -33,8 +33,6 @@ public slots:
 
     void setDarkThemeSlot();
     void setLightThemeSlot();
-    void setSystemDarkThemeSlot();
-    void setSystemLightThemeSlot();
 
 private:
     Settings* settings;

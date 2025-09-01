@@ -5,10 +5,6 @@
         <file>Src/Ui/Languages/English.json</file>
     </qresource>
     <qresource prefix="/Images">
-        <file>Src/Ui/Icons/WindowsIcons/Close48x48.png</file>
-        <file>Src/Ui/Icons/WindowsIcons/Document48x48.png</file>
-        <file>Src/Ui/Icons/WindowsIcons/Folder48x48.png</file>
-        <file>Src/Ui/Icons/WindowsIcons/icons8-cancel-48.png</file>
         <file>Src/Ui/Icons/WindowsIcons/Language48x48.png</file>
         <file>Src/Ui/Icons/WindowsIcons/Redo48x48.png</file>
         <file>Src/Ui/Icons/WindowsIcons/Save48x48.png</file>

@@ -10,8 +10,6 @@ HelpMenu::HelpMenu(QWidget* parent):
     changeColorThemeMenu = new QMenu(this);
     darkColorTheme = new QAction(changeColorThemeMenu);
     lightColorTheme = new QAction(changeColorThemeMenu);
-    systemDarkColor = new QAction(changeColorThemeMenu);
-    systemLightColor = new QAction(changeColorThemeMenu);
 
     helpAction = new QAction(this);
 }
@@ -25,12 +23,8 @@ void HelpMenu::setItems()
     addMenu(changeColorThemeMenu);
     changeColorThemeMenu->addAction(darkColorTheme);
     changeColorThemeMenu->addAction(lightColorTheme);
-    changeColorThemeMenu->addAction(systemDarkColor);
-    changeColorThemeMenu->addAction(systemLightColor);
     darkColorTheme->setCheckable(true);
     lightColorTheme->setCheckable(true);
-    systemDarkColor->setCheckable(true);
-    systemLightColor->setCheckable(true);
 
     addMenu(changeLanguageMenu);
     changeLanguageMenu->addAction(englishAction);

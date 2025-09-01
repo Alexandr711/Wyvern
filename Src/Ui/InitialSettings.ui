@@ -162,16 +162,6 @@
              <string>Light theme</string>
             </property>
            </item>
-           <item>
-            <property name="text">
-             <string/>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string/>
-            </property>
-           </item>
           </widget>
          </item>
          <item>
