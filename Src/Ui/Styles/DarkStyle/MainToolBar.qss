@@ -8,8 +8,8 @@ QToolButton
 {
     background-color:#181818;
     border: none;             
-    padding: 2px 2px;        /* Отступы */
-    border-radius: 5px;        /* Закругление углов */
+    padding: 2px 2px;
+    border-radius: 5px;
 }
 
 QToolButton:hover

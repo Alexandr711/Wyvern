@@ -22,7 +22,10 @@ public:
     inline void circleButtonSetTitle(QString title){circleButton->setToolTip(title);}
     inline void rectangleButtonSetTitle(QString title){rectangleButton->setToolTip(title);}
 
-
+    void settingsMechanicalEngineringTabWidget();
+    void settingsMicroElectronicTabWidget();
+    void settingsElectricalEngineringTabWidget();
+    void settingsArchitectureTabWidget();
 private:
     QWidget* mainWidget;
     QHBoxLayout* mainLayout;
@@ -35,6 +38,13 @@ private:
     QToolButton* polylineButton;
     QToolButton* circleButton;
     QToolButton* rectangleButton;
+
+    QWidget* tabWidgetsItemWidget;
+
+    QTabWidget* mechanicalEngineringTabWidget;
+    QTabWidget* microElectronicTabWidget;
+    QTabWidget* electricalEngineringTabWidget;
+    QTabWidget* architectureTabWidget;
 
     PlanToolsWidget* planToolsWidget;
 };

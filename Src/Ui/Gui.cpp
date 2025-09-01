@@ -17,13 +17,16 @@ Gui::Gui()
     settings = new Settings;
     mainWindow = new MainWindow;
 
-    menuBar = new QMenuBar;
-    fileMenu = new FileMenu;
-    helpMenu = new HelpMenu;
+    menuBar = new QMenuBar(mainWindow);
+    fileMenu = new FileMenu(menuBar);
+    helpMenu = new HelpMenu(menuBar);
 
     mainToolBar = new MainToolBar;
 
     cadToolsToolBar = new CADToolsToolBar;
+
+    fileMenu->setObjectName("fileMenu");
+    helpMenu->setObjectName("helpMenu");
 }
 
 Gui::~Gui()

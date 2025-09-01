@@ -12,10 +12,24 @@ CADToolsToolBar::CADToolsToolBar(QWidget* parent):
     polylineButton = new QToolButton;
     circleButton = new QToolButton;
     rectangleButton = new QToolButton;
+
+    tabWidgetsItemWidget = new QWidget;
+
+    mechanicalEngineringTabWidget = new QTabWidget;
+    microElectronicTabWidget = new QTabWidget;
+    electricalEngineringTabWidget = new QTabWidget;
+    architectureTabWidget = new QTabWidget;
 }
 
 CADToolsToolBar::~CADToolsToolBar()
 {
+    delete architectureTabWidget;
+    delete electricalEngineringTabWidget;
+    delete microElectronicTabWidget;
+    delete mechanicalEngineringTabWidget;
+
+    delete tabWidgetsItemWidget;
+
     delete rectangleButton;
     delete circleButton;
     delete polylineButton;
