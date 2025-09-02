@@ -4,7 +4,26 @@
         <file>Src/Ui/Languages/RussianMacOS.json</file>
         <file>Src/Ui/Languages/English.json</file>
     </qresource>
-    <qresource prefix="/Images"/>
+    <qresource prefix="/Images">
+        <file>Src/Ui/Icons/DarkThemeIcons/File.png</file>
+        <file>Src/Ui/Icons/DarkThemeIcons/FileHover.png</file>
+        <file>Src/Ui/Icons/DarkThemeIcons/Folder.png</file>
+        <file>Src/Ui/Icons/DarkThemeIcons/FolderHover.png</file>
+        <file>Src/Ui/Icons/DarkThemeIcons/Redo.png</file>
+        <file>Src/Ui/Icons/DarkThemeIcons/RedoHover.png</file>
+        <file>Src/Ui/Icons/DarkThemeIcons/Save.png</file>
+        <file>Src/Ui/Icons/DarkThemeIcons/SaveAll.png</file>
+        <file>Src/Ui/Icons/DarkThemeIcons/SaveAllHover.png</file>
+        <file>Src/Ui/Icons/DarkThemeIcons/SaveHover.png</file>
+        <file>Src/Ui/Icons/DarkThemeIcons/Undo.png</file>
+        <file>Src/Ui/Icons/DarkThemeIcons/UndoHover.png</file>
+        <file>Src/Ui/Icons/LightThemeIcons/File.png</file>
+        <file>Src/Ui/Icons/LightThemeIcons/Folder.png</file>
+        <file>Src/Ui/Icons/LightThemeIcons/Redo.png</file>
+        <file>Src/Ui/Icons/LightThemeIcons/Save.png</file>
+        <file>Src/Ui/Icons/LightThemeIcons/SaveAll.png</file>
+        <file>Src/Ui/Icons/LightThemeIcons/Undo.png</file>
+    </qresource>
     <qresource prefix="/ColorThemes">
         <file>Src/Ui/Styles/DarkStyle/DarkStyle.json</file>
         <file>Src/Ui/Styles/LightStyle/LightStyle.json</file>

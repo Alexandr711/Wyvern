@@ -58,3 +58,8 @@ void CADToolsToolBar::setItems()
     mainToolButtonLayout->setContentsMargins(0, 0, 0, 0);
     mainLayout->setContentsMargins(0, 0, 0, 0);
 }
+
+void CADToolsToolBar::settingsMechanicalEngineringTabWidget()
+{
+    //mechanicalEngineringTabWidget->addTab(planToolsWidget);
+}
