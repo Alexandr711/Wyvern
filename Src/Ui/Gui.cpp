@@ -10,6 +10,8 @@
 #include "ToolBars/CADToolsToolBar.h"
 #include "Settings.h"
 #include "SettingValues.h"
+#include "Dialogs/CreateDialog.h"
+#include "Dialogs/OpenDialog.h"
 
 
 Gui::Gui()
@@ -23,10 +25,13 @@ Gui::Gui()
 
     mainToolBar = new MainToolBar;
 
-    cadToolsToolBar = new CADToolsToolBar;
+    cadToolsToolBar = new CADToolsToolBar(mainWindow);
 
-    fileMenu->setObjectName("fileMenu");
-    helpMenu->setObjectName("helpMenu");
+    openDialog = new OpenDialog(mainWindow);
+
+
+    //fileMenu->setObjectName("fileMenu");
+    //helpMenu->setObjectName("helpMenu");
 }
 
 Gui::~Gui()
@@ -35,8 +40,6 @@ Gui::~Gui()
 
     delete mainToolBar;
 
-    delete helpMenu;
-    delete fileMenu;
     delete menuBar;
 
     delete mainWindow;
@@ -132,6 +135,8 @@ void Gui::connections()
     //Connect for change color theme
     connect(helpMenu->darkColorThemeGet(), SIGNAL(triggered(bool)), this, SLOT(setDarkThemeSlot()));
     connect(helpMenu->lightColorThemeGet(), SIGNAL(triggered(bool)), this, SLOT(setLightThemeSlot()));
+
+    connect(mainToolBar->getOpenButton(), SIGNAL(clicked(bool)), this, SLOT(openOpenDialogSlot()));
 }
 
 void Gui::setColorTheme()
@@ -213,3 +218,15 @@ void Gui::setLightThemeSlot()
     helpMenu->setDarkThemeActionFlag(false);
     helpMenu->setLightThemeActionFlag(true);
 }
+
+void Gui::openOpenDialogSlot()
+{
+    openDialog->show();
+}
+
+void Gui::openCreateDialogSlot()
+{
+    createDialog->show();
+}
+
+

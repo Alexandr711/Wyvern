@@ -13,6 +13,10 @@ class CADToolsToolBar;
 class HelpMenu;
 class Settings;
 
+//dialogs classes
+class OpenDialog;
+class CreateDialog;
+
 class Gui: QObject
 {
     Q_OBJECT
@@ -34,6 +38,9 @@ public slots:
     void setDarkThemeSlot();
     void setLightThemeSlot();
 
+    void openOpenDialogSlot();
+    void openCreateDialogSlot();
+
 private:
     Settings* settings;
     MainWindow* mainWindow;
@@ -46,6 +53,10 @@ private:
     MainToolBar* mainToolBar;
 
     CADToolsToolBar* cadToolsToolBar;
+
+    //Dialogs
+    OpenDialog* openDialog;
+    CreateDialog* createDialog;
 };
 
 #endif // GUI_H

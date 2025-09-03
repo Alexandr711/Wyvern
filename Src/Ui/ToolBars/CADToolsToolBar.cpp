@@ -74,5 +74,6 @@ void CADToolsToolBar::setItems()
 void CADToolsToolBar::settingsMechanicalEngineringTabWidget()
 {
     mechanicalEngineringTabWidget->addTab(planToolsWidget, mechanicalEngineringLabels->planTabName);
+    //mechanicalEngineringTabWidget->addTab();
 }
 

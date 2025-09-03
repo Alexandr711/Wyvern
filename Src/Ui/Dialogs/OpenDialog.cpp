@@ -1,3 +1,3 @@
 #include "OpenDialog.h"
 
-OpenDialog::OpenDialog() {}
+OpenDialog::OpenDialog(QWidget* parent): QFileDialog(parent) {}

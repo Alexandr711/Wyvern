@@ -6,7 +6,7 @@
 class OpenDialog : public QFileDialog
 {
 public:
-    OpenDialog();
+    OpenDialog(QWidget* parent = nullptr);
 };
 
 #endif // OPENDIALOG_H
