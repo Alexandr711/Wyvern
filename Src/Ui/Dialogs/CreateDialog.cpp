@@ -1,3 +1,3 @@
 #include "CreateDialog.h"
 
-CreateDialog::CreateDialog(QWidget* parent): QFileDialog(parent) {}
+CreateDialog::CreateDialog(QWidget* parent): QWidget(parent) {}

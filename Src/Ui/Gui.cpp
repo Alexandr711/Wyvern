@@ -28,6 +28,7 @@ Gui::Gui()
     cadToolsToolBar = new CADToolsToolBar(mainWindow);
 
     openDialog = new OpenDialog(mainWindow);
+    createDialog = new CreateDialog();
 
 
     //fileMenu->setObjectName("fileMenu");
@@ -36,6 +37,8 @@ Gui::Gui()
 
 Gui::~Gui()
 {
+    delete createDialog;
+
     delete cadToolsToolBar;
 
     delete mainToolBar;
@@ -137,6 +140,7 @@ void Gui::connections()
     connect(helpMenu->lightColorThemeGet(), SIGNAL(triggered(bool)), this, SLOT(setLightThemeSlot()));
 
     connect(mainToolBar->getOpenButton(), SIGNAL(clicked(bool)), this, SLOT(openOpenDialogSlot()));
+    connect(mainToolBar->getCreateButton(), SIGNAL(clicked(bool)), this, SLOT(openCreateDialogSlot()));
 }
 
 void Gui::setColorTheme()
@@ -226,6 +230,7 @@ void Gui::openOpenDialogSlot()
 
 void Gui::openCreateDialogSlot()
 {
+    createDialog->setWindowModality(Qt::ApplicationModal);
     createDialog->show();
 }
 

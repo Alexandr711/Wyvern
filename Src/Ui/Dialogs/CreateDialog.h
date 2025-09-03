@@ -1,9 +1,9 @@
 #ifndef CREATEDIALOG_H
 #define CREATEDIALOG_H
 
-#include <QFileDialog>
+#include <QWidget>
 
-class CreateDialog : public QFileDialog
+class CreateDialog : public QWidget
 {
 public:
     CreateDialog(QWidget* parent = nullptr);
