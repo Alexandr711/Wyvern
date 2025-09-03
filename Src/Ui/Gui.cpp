@@ -27,6 +27,8 @@ Gui::Gui()
 
     fileMenu->setObjectName("fileMenu");
     helpMenu->setObjectName("helpMenu");
+
+    fileMenu->setObjectName("fileName");
 }
 
 Gui::~Gui()
@@ -147,7 +149,9 @@ void Gui::setColorTheme()
 
 
     //Set style sheets
+    menuBar->setStyleSheet(QString(settings->readQssFile(configJsonObject["MenuBar"].toString())));
     mainToolBar->setStyleSheet(QString(settings->readQssFile(configJsonObject["MainToolBar"].toString())));
+
 }
 
 

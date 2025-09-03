@@ -1,0 +1,81 @@
+QToolBar
+{
+    background-color: #f8f8f8;
+    border-color: none;
+    color: black;
+}
+
+QToolButton
+{
+    background-color:#f8f8f8;
+    border: none;             
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+QToolTip
+{
+    color: black;
+    background-color: #ffffff;
+    border: 1px solid #616161;
+}
+
+
+QToolButton#openButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/LightThemeIcons/FolderHover.png");
+}
+
+QToolButton#openButton
+{
+    image: url(":/Images/Src/Ui/Icons/LightThemeIcons/Folder.png");
+}
+
+QToolButton#createButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/LightThemeIcons/FileHover.png");
+}
+
+QToolButton#createButton
+{
+    image: url(":/Images/Src/Ui/Icons/LightThemeIcons/File.png");
+}
+
+
+QToolButton#saveButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/LightThemeIcons/SaveHover.png");
+}
+
+QToolButton#saveButton
+{
+    image: url(":/Images/Src/Ui/Icons/LightThemeIcons/Save.png");
+}
+
+QToolButton#saveAllButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/LightThemeIcons/SaveAllHover.png");
+}
+QToolButton#saveAllButton
+{
+    image: url(":/Images/Src/Ui/Icons/LightThemeIcons/SaveAll.png");
+}
+
+QToolButton#undoButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/LightThemeIcons/UndoHover.png");
+}
+QToolButton#undoButton
+{
+    image: url(":/Images/Src/Ui/Icons/LightThemeIcons/Undo.png");
+}
+
+QToolButton#returnButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/LightThemeIcons/RedoHover.png");
+}
+QToolButton#returnButton
+{
+    image: url(":/Images/Src/Ui/Icons/LightThemeIcons/Redo.png");
+}
+

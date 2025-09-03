@@ -23,10 +23,19 @@
         <file>Src/Ui/Icons/LightThemeIcons/Save.png</file>
         <file>Src/Ui/Icons/LightThemeIcons/SaveAll.png</file>
         <file>Src/Ui/Icons/LightThemeIcons/Undo.png</file>
+        <file>Src/Ui/Icons/LightThemeIcons/FileHover.png</file>
+        <file>Src/Ui/Icons/LightThemeIcons/FolderHover.png</file>
+        <file>Src/Ui/Icons/LightThemeIcons/RedoHover.png</file>
+        <file>Src/Ui/Icons/LightThemeIcons/SaveAllHover.png</file>
+        <file>Src/Ui/Icons/LightThemeIcons/SaveHover.png</file>
+        <file>Src/Ui/Icons/LightThemeIcons/UndoHover.png</file>
     </qresource>
     <qresource prefix="/ColorThemes">
         <file>Src/Ui/Styles/DarkStyle/DarkStyle.json</file>
         <file>Src/Ui/Styles/LightStyle/LightStyle.json</file>
         <file>Src/Ui/Styles/DarkStyle/MainToolBar.qss</file>
+        <file>Src/Ui/Styles/LightStyle/MainToolBar.qss</file>
+        <file>Src/Ui/Styles/DarkStyle/MenuBar.qss</file>
+        <file>Src/Ui/Styles/LightStyle/MenuBar.qss</file>
     </qresource>
 </RCC>

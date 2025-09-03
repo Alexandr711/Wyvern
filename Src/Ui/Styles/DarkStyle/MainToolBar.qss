@@ -12,6 +12,13 @@ QToolButton
     border-radius: 5px;
 }
 
+QToolTip
+{
+    color: white;
+    background-color: #1f1f1f;
+    border: 1px solid #181818;
+}
+
 
 QToolButton#openButton:hover
 {
