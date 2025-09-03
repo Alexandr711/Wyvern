@@ -47,6 +47,9 @@ private:
     QTabWidget* architectureTabWidget;
 
     PlanToolsWidget* planToolsWidget;
+
+    struct MechanicalEngineringLabels;
+    MechanicalEngineringLabels* mechanicalEngineringLabels;
 };
 
 #endif // CADTOOLSTOOLBAR_H
