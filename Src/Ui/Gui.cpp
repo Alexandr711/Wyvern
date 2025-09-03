@@ -27,8 +27,6 @@ Gui::Gui()
 
     fileMenu->setObjectName("fileMenu");
     helpMenu->setObjectName("helpMenu");
-
-    fileMenu->setObjectName("fileName");
 }
 
 Gui::~Gui()

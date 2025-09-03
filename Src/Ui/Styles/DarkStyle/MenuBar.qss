@@ -2,4 +2,28 @@ QMenuBar
 {
     background-color: #181818;
     color: white;
+    border: 1px solid #2b2b2b;
+    padding-left: 15px;
+    font: 13px;
+}
+
+QMenuBar::item
+{
+    background-color: #181818;
+    color: white;
+    border: 1px solid #181818;
+    border-radius: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+QMenuBar::item:selected
+{
+    background-color: #2b2b2b;
+    color: white;
+    border: 1px solid #2b2b2b;
 }
