@@ -24,7 +24,9 @@ qt_add_library(UiLib STATIC MenuBar/FileMenu.h MenuBar/FileMenu.cpp
              InitialSettings.h InitialSettingss.cpp InitialSettings.ui
              SettingValues.h
              Dialogs/OpenDialog.h Dialogs/OpenDialog.cpp
-             Dialogs/CreateDialog.h Dialogs/CreateDialog.cpp
+             Dialogs/CreateDialog.h Dialogs/CreateDialog.cpp Dialogs/CreateDialog.ui
+             Dialogs/MechanicalEngineringWidget.h Dialogs/MechanicalEngineringWidget.cpp Dialogs/MechanicalEngineringWidget.ui
+
 )
 
 

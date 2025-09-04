@@ -29,10 +29,6 @@ Gui::Gui()
 
     openDialog = new OpenDialog(mainWindow);
     createDialog = new CreateDialog();
-
-
-    //fileMenu->setObjectName("fileMenu");
-    //helpMenu->setObjectName("helpMenu");
 }
 
 Gui::~Gui()
@@ -158,7 +154,8 @@ void Gui::setColorTheme()
     //Set style sheets
     menuBar->setStyleSheet(QString(settings->readQssFile(configJsonObject["MenuBar"].toString())));
     mainToolBar->setStyleSheet(QString(settings->readQssFile(configJsonObject["MainToolBar"].toString())));
-
+    fileMenu->setStyleSheet(QString(settings->readQssFile(configJsonObject["Menu"].toString())));
+    helpMenu->setStyleSheet(QString(settings->readQssFile(configJsonObject["Menu"].toString())));
 }
 
 

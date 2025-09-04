@@ -8,6 +8,8 @@ int main(int argc, char** argv)
 {
     QApplication app(argc, argv);
 
+    //app.setStyle("Fusion");
+
     InitialSettings gui;
     //gui.setSystemActionTitle();
     gui.startGui();

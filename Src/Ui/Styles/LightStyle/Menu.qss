@@ -1,0 +1,37 @@
+QMenu
+{
+    color: black;
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid #d4d4d4;
+    outline: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+QMenu:separator
+{
+    background-color:#d4d4d4;
+    height: 1px;
+    border: none;
+}
+
+QMenu::item
+{ 
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: black;
+    margin: 3px;
+}
+
+QMenu::item:selected
+{
+    color: white;
+    background-color: #0b5345;
+    border: 1px solid #0b5345;
+    margin: 3px;
+}
