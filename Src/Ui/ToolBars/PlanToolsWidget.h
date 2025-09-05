@@ -11,6 +11,12 @@ public:
     PlanToolsWidget(QWidget* parent = nullptr);
 
 private:
+    QToolButton* lineButton;
+    QToolButton* arcButton;
+    QToolButton* polylineButton;
+    QToolButton* circleButton;
+    QToolButton* rectangleButton;
+
 
 };
 
