@@ -20,12 +20,11 @@ QMenu::item
 { 
     padding-left: 20px;
     padding-right: 10px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     background-color: #ffffff;
     border: 1px solid #ffffff;
     color: black;
-    margin: 3px;
 }
 
 QMenu::item:selected
@@ -33,5 +32,4 @@ QMenu::item:selected
     color: white;
     background-color: #0b5345;
     border: 1px solid #0b5345;
-    margin: 3px;
 }
