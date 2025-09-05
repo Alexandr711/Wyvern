@@ -25,14 +25,26 @@ QToolTip
     border: 1px solid #181818;
 }
 
+QLabel#separator
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 8px;
+    padding-left: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    image: url(":/Images/Src/Ui/Icons/DarkThemeIcons/Separator.png");
+}
 
 QToolButton#openButton:hover
 {
+    margin-left: 10px;
     image: url(":/Images/Src/Ui/Icons/DarkThemeIcons/FolderHover.png");
 }
 
 QToolButton#openButton
 {
+    margin-left: 10px;
     image: url(":/Images/Src/Ui/Icons/DarkThemeIcons/Folder.png");
 }
 
@@ -84,3 +96,9 @@ QToolButton#returnButton
     image: url(":/Images/Src/Ui/Icons/DarkThemeIcons/Redo.png");
 }
 
+QComboBox
+{
+    border: 1px solid #454545;
+    background-color: #1f1f1f;
+    color: #ffffff;
+}

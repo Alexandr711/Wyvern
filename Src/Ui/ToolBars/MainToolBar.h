@@ -4,6 +4,8 @@
 #include <QToolBar>
 #include <QToolButton>
 #include <QString>
+#include <QComboBox>
+#include <QLabel>
 
 class MainToolBar : public QToolBar
 {
@@ -35,6 +37,10 @@ private:
     QToolButton* saveAllButton;
     QToolButton* undoButton;
     QToolButton* returnButton;
+
+    QLabel* separator;
+
+    QComboBox* changeTypeCADComboBox;
 };
 
 #endif // MAINTOOLBAR_H

@@ -29,6 +29,8 @@
         <file>Src/Ui/Icons/LightThemeIcons/SaveAllHover.png</file>
         <file>Src/Ui/Icons/LightThemeIcons/SaveHover.png</file>
         <file>Src/Ui/Icons/LightThemeIcons/UndoHover.png</file>
+        <file>Src/Ui/Icons/DarkThemeIcons/Separator.png</file>
+        <file>Src/Ui/Icons/LightThemeIcons/Separator.png</file>
     </qresource>
     <qresource prefix="/ColorThemes">
         <file>Src/Ui/Styles/DarkStyle/DarkStyle.json</file>

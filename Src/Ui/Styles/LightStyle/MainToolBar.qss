@@ -5,12 +5,23 @@ QToolBar
     color: black;
 }
 
+QLabel
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 8px;
+    padding-left: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    image: url(":/Images/Src/Ui/Icons/LightThemeIcons/Separator.png");
+}
+
 QToolButton
 {
     background-color:#f8f8f8;
     border: none;             
     padding: 2px 6px;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 QToolTip
@@ -29,11 +40,13 @@ QToolButton
 
 QToolButton#openButton:hover
 {
+    margin-left: 10px;
     image: url(":/Images/Src/Ui/Icons/LightThemeIcons/FolderHover.png");
 }
 
 QToolButton#openButton
 {
+    margin-left: 10px;
     image: url(":/Images/Src/Ui/Icons/LightThemeIcons/Folder.png");
 }
 
@@ -85,3 +98,9 @@ QToolButton#returnButton
     image: url(":/Images/Src/Ui/Icons/LightThemeIcons/Redo.png");
 }
 
+QComboBox
+{
+    border: 1px solid #d4d4d4;
+    background-color: #ffffff;
+    color: #000000;
+}

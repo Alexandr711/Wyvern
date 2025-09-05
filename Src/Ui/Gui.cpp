@@ -57,6 +57,8 @@ void Gui::setItems()
     mainWindow->addToolBar(mainToolBar);
     mainWindow->addToolBarBreak();
     mainWindow->addToolBar(cadToolsToolBar);
+    mainToolBar->setMovable(false);
+    cadToolsToolBar->setMovable(false);
 
     mainToolBar->setItems();
     cadToolsToolBar->setItems();
@@ -101,13 +103,6 @@ void Gui::setTitleOnWidgets()
     mainToolBar->setSaveAllButtonToolTipTitle(tempJsonObject["Save all tooltip"].toString());
     mainToolBar->setUndoButtonToolTipTitle(tempJsonObject["Undo tooltip"].toString());
     mainToolBar->setReturnButtonToolTipTitle(tempJsonObject["Return tooltip"].toString());
-
-    //CADToolsToolBar
-    cadToolsToolBar->lineButtonSetTitle(tempJsonObject["Line tooltip"].toString());
-    cadToolsToolBar->arcButtonSetTitle(tempJsonObject["Arc tooltip"].toString());
-    cadToolsToolBar->polylineButtonSetTitle(tempJsonObject["Polyline tooltip"].toString());
-    cadToolsToolBar->circleButtonSetTitle(tempJsonObject["Circle tooltip"].toString());
-    cadToolsToolBar->rectangleButtonSetTitle(tempJsonObject["Rectangle tooltip"].toString());
 }
 
 

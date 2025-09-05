@@ -10,12 +10,18 @@ MainToolBar::MainToolBar(QWidget* parent):
     undoButton = new QToolButton(this);
     returnButton = new QToolButton(this);
 
+    separator = new QLabel(this);
+
+    changeTypeCADComboBox = new QComboBox(this);
+
     openButton->setObjectName("openButton");
     createButton->setObjectName("createButton");
     saveButton->setObjectName("saveButton");
     saveAllButton->setObjectName("saveAllButton");
     undoButton->setObjectName("undoButton");
     returnButton->setObjectName("returnButton");
+    separator->setObjectName("separator");
+    changeTypeCADComboBox->setObjectName("changeTypeCADComboBox");
 }
 
 MainToolBar::~MainToolBar()
@@ -31,6 +37,8 @@ void MainToolBar::setItems()
     addWidget(saveAllButton);
     addWidget(undoButton);
     addWidget(returnButton);
+    addWidget(separator);
+    addWidget(changeTypeCADComboBox);
 }
 
 void MainToolBar::setOpenButtonToolTipTitle(QString title)
