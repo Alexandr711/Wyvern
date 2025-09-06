@@ -61,7 +61,6 @@ void Gui::setItems()
     cadToolsToolBar->setMovable(false);
 
     mainToolBar->setItems();
-    cadToolsToolBar->setItems();
 }
 
 void Gui::setTitleOnWidgets()

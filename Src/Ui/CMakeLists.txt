@@ -18,8 +18,7 @@ qt_add_library(UiLib STATIC MenuBar/FileMenu.h MenuBar/FileMenu.cpp
              ToolBars/MainToolBar.h ToolBars/MainToolBar.cpp
              Gui.h Gui.cpp
              MenuBar/HelpMenu.h MenuBar/HelpMenu.cpp
-             ToolBars/CADToolsToolBar.h ToolBars/CADToolsToolBar.cpp
-             ToolBars/PlanToolsWidget.h ToolBars/PlanToolsWidget.cpp
+
              Settings.h Settings.cpp
              InitialSettings.h InitialSettingss.cpp InitialSettings.ui
              SettingValues.h
@@ -27,6 +26,12 @@ qt_add_library(UiLib STATIC MenuBar/FileMenu.h MenuBar/FileMenu.cpp
              Dialogs/CreateDialog.h Dialogs/CreateDialog.cpp Dialogs/CreateDialog.ui
              Dialogs/MechanicalEngineringWidget.h Dialogs/MechanicalEngineringWidget.cpp Dialogs/MechanicalEngineringWidget.ui
              ToolBars/PlanTools/LineSettingsPlanWidget.h ToolBars/PlanTools/LineSettingsPlanWidget.cpp ToolBars/PlanTools/LineSettingsPlanWidget.ui
+             ToolBars/CADToolsToolBar.h ToolBars/CADToolsToolBar.cpp
+             ToolBars/PlanTools/MechanicalEngineringTabWidget.h ToolBars/PlanTools/MechanicalEngineringTabWidget.cpp ToolBars/PlanTools/MechanicalEngineringTabWidget.ui
+
+
+
+
 
 )
 
