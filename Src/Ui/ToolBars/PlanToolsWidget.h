@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QToolButton>
+#include <QHBoxLayout>
 
 class PlanToolsWidget: public QWidget
 {
@@ -17,7 +18,7 @@ private:
     QToolButton* circleButton;
     QToolButton* rectangleButton;
 
-
+    Q
 };
 
 #endif // PLANTOOLSWIDGET_H

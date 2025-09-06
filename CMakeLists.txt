@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.3)
 
-project(Wivern VERSION 1.0)
+project(Wyvern VERSION 1.0)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
@@ -13,14 +13,14 @@ add_subdirectory(Src/Ui)
 
 #include_directories(${CMAKE_SOURCE_DIR}/Src/Ui/MenuBar)
 
-set(WIVERN Src/Main.cpp)
+set(WYVERN Src/Main.cpp)
 
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 qt_standard_project_setup()
 
-qt_add_executable(${PROJECT_NAME} ${WIVERN}
+qt_add_executable(${PROJECT_NAME} ${WYVERN}
     resources.qrc)
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/Src/Ui/MenuBar/)
