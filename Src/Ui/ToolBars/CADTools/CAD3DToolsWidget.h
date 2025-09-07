@@ -13,6 +13,7 @@ class CAD3DToolsWidget : public QWidget
     Q_OBJECT
 public:
     explicit CAD3DToolsWidget(QWidget *parent = nullptr);
+    ~CAD3DToolsWidget();
 
     void setItems();
 

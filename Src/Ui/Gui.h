@@ -15,6 +15,8 @@ class Settings;
 //dialogs classes
 class OpenDialog;
 class CreateDialog;
+class CADToolBar;
+class CAD3DToolsWidget;
 
 class Gui: QObject
 {
@@ -49,12 +51,16 @@ private:
     FileMenu* fileMenu;
     HelpMenu* helpMenu;
 
+    //Main Toolbar
     MainToolBar* mainToolBar;
 
-
-    //Dialogs
+    //Dialogs for main ToolBar
     OpenDialog* openDialog;
     CreateDialog* createDialog;
+
+    //CADToolBar
+    CADToolBar* cadToolBar;
+    CAD3DToolsWidget* cad3DToolsWidget;
 };
 
 #endif // GUI_H

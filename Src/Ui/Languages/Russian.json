@@ -31,6 +31,9 @@
     "Arc tooltip": "Дуга",
     "Polyline tooltip": "Полилиния",
     "Circle tooltip": "Круг",
-    "Rectangle tooltip": "Прямоугольник"
+    "Rectangle tooltip": "Прямоугольник",
+
+    "Drawing": "Чертёж",
+    "3DTools": "3D Инструменты"
 
 }

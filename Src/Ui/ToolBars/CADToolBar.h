@@ -7,13 +7,27 @@
 #include <QComboBox>
 #include <QTabWidget>
 
-class MainToolsToolBar : public QToolBar
+class CADToolBar : public QToolBar
 {
 public:
-    MainToolsToolBar(QWidget* parent = nullptr);
+    explicit CADToolBar(QWidget* parent = nullptr);
+    ~CADToolBar();
+
+    void setItems();
+
+    void addPlanTab(QWidget*);
+    void addCad3DToolsTab(QWidget*);
+    void setTabsText();
+
+    inline void setPlanString(QString str){planString = str;}
+    inline void setCad3DToolsString(QString str){cad3DToolsString = str;}
 
 private:
     QTabWidget* toolTabWidget;
+
+    //Labels of tabs
+    QString planString;
+    QString cad3DToolsString;
 };
 
 #endif // CADTOOLBAR_H

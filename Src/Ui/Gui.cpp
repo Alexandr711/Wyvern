@@ -11,6 +11,8 @@
 #include "SettingValues.h"
 #include "Dialogs/CreateDialog.h"
 #include "Dialogs/OpenDialog.h"
+#include "ToolBars/CADToolBar.h"
+#include "ToolBars/CADTools/CAD3DToolsWidget.h"
 
 
 Gui::Gui()
@@ -26,10 +28,16 @@ Gui::Gui()
 
     openDialog = new OpenDialog(mainWindow);
     createDialog = new CreateDialog();
+
+    cadToolBar = new CADToolBar;
+    cad3DToolsWidget = new CAD3DToolsWidget;
 }
 
 Gui::~Gui()
 {
+    delete cad3DToolsWidget;
+    delete cadToolBar;
+
     delete createDialog;
 
     delete mainToolBar;
@@ -53,8 +61,13 @@ void Gui::setItems()
     mainWindow->addToolBarBreak();
     mainToolBar->setMovable(false);
 
-
     mainToolBar->setItems();
+
+    //Add CADToolBar
+    mainWindow->addToolBar(cadToolBar);
+    cadToolBar->setItems();
+    cadToolBar->addCad3DToolsTab(cad3DToolsWidget);
+    cad3DToolsWidget->setItems();
 }
 
 void Gui::setTitleOnWidgets()
@@ -96,7 +109,13 @@ void Gui::setTitleOnWidgets()
     mainToolBar->setSaveAllButtonToolTipTitle(tempJsonObject["Save all tooltip"].toString());
     mainToolBar->setUndoButtonToolTipTitle(tempJsonObject["Undo tooltip"].toString());
     mainToolBar->setReturnButtonToolTipTitle(tempJsonObject["Return tooltip"].toString());
+
+    //Set title on CAD ToolBar
+    cadToolBar->setPlanString(tempJsonObject["Drawing"].toString());
+    cadToolBar->setCad3DToolsString(tempJsonObject["3DTools"].toString());
+    cadToolBar->setTabsText();
 }
+
 
 
 

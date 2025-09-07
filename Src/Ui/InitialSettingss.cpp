@@ -35,8 +35,8 @@ void InitialSettings::mainWindowFunc()
 {
     gui->connections();
     gui->setColorTheme();
-    gui->setItems();
     gui->setTitleOnWidgets();
+    gui->setItems();
     gui->setFlags();
     gui->show();
 }
