@@ -7,7 +7,6 @@
 #include "MenuBar/FileMenu.h"
 #include "MenuBar/HelpMenu.h"
 #include "ToolBars/MainToolBar.h"
-#include "ToolBars/CADToolsToolBar.h"
 #include "Settings.h"
 #include "SettingValues.h"
 #include "Dialogs/CreateDialog.h"
@@ -25,8 +24,6 @@ Gui::Gui()
 
     mainToolBar = new MainToolBar;
 
-    cadToolsToolBar = new CADToolsToolBar(mainWindow);
-
     openDialog = new OpenDialog(mainWindow);
     createDialog = new CreateDialog();
 }
@@ -34,8 +31,6 @@ Gui::Gui()
 Gui::~Gui()
 {
     delete createDialog;
-
-    delete cadToolsToolBar;
 
     delete mainToolBar;
 
@@ -56,9 +51,8 @@ void Gui::setItems()
 
     mainWindow->addToolBar(mainToolBar);
     mainWindow->addToolBarBreak();
-    mainWindow->addToolBar(cadToolsToolBar);
     mainToolBar->setMovable(false);
-    cadToolsToolBar->setMovable(false);
+
 
     mainToolBar->setItems();
 }

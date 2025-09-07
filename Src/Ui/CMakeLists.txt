@@ -11,6 +11,7 @@ qt_standard_project_setup()
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Gui)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 
 qt_add_library(UiLib STATIC MenuBar/FileMenu.h MenuBar/FileMenu.cpp
@@ -24,19 +25,16 @@ qt_add_library(UiLib STATIC MenuBar/FileMenu.h MenuBar/FileMenu.cpp
              SettingValues.h
              Dialogs/OpenDialog.h Dialogs/OpenDialog.cpp
              Dialogs/CreateDialog.h Dialogs/CreateDialog.cpp Dialogs/CreateDialog.ui
-             Dialogs/MechanicalEngineringWidget.h Dialogs/MechanicalEngineringWidget.cpp Dialogs/MechanicalEngineringWidget.ui
-             ToolBars/PlanTools/LineSettingsPlanWidget.h ToolBars/PlanTools/LineSettingsPlanWidget.cpp ToolBars/PlanTools/LineSettingsPlanWidget.ui
-             ToolBars/CADToolsToolBar.h ToolBars/CADToolsToolBar.cpp
-             ToolBars/PlanTools/MechanicalEngineringTabWidget.h ToolBars/PlanTools/MechanicalEngineringTabWidget.cpp ToolBars/PlanTools/MechanicalEngineringTabWidget.ui
 
 
 
-
-
+             ToolBars/CADToolBar.h ToolBars/CADToolBar.cpp
+             ToolBars/CADTools/CAD3DToolsWidget.h ToolBars/CADTools/CAD3DToolsWidget.cpp
 )
 
 
 target_link_libraries(UiLib PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 target_link_libraries(UiLib PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 target_link_libraries(UiLib PRIVATE Qt${QT_VERSION_MAJOR}::Gui)
+target_link_libraries(UiLib PRIVATE Qt6::Widgets)
 

@@ -9,7 +9,6 @@ class Settings;
 class MainWindow;
 class FileMenu;
 class MainToolBar;
-class CADToolsToolBar;
 class HelpMenu;
 class Settings;
 
@@ -52,7 +51,6 @@ private:
 
     MainToolBar* mainToolBar;
 
-    CADToolsToolBar* cadToolsToolBar;
 
     //Dialogs
     OpenDialog* openDialog;
