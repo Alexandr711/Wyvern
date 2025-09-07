@@ -34,5 +34,11 @@
     "Rectangle tooltip": "Rectangle",
 
     "Drawing": "Drawing",
-    "3DTools": "3D Tools"
+    "3DTools": "3D Tools",
+    
+    "Line": "Line",
+    "Arc": "Arc",
+    "Polyline": "Polyline",
+    "Circle": "Circle",
+    "Rectangle": "Rectangle"
 }

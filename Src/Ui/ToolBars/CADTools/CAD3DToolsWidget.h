@@ -20,6 +20,10 @@ public:
 
     inline void setToolTipLineButton(QString title){lineButton->setToolTip(title);}
     inline void setToolTipArcButton(QString title){arcButton->setToolTip(title);}
+    inline void setToolTipPolylineButton(QString title){polylineButton->setToolTip(title);}
+    inline void setToolTipCircleButton(QString title){circleButton->setToolTip(title);}
+    inline void setToolTipRectangleButton(QString title){rectangleButton->setToolTip(title);}
+
 
 
 private:

@@ -6,6 +6,13 @@ QToolButton
     padding: 2px;
 }
 
+QToolTip
+{
+    color: white;
+    background-color: #1f1f1f;
+    border: 1px solid #181818;
+}
+
 QToolButton#circleButton
 {
     image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/Circle.png");
@@ -54,4 +61,11 @@ QToolButton#rectangleButton
 QToolButton#rectangleButton:hover
 {
     image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/RectangleHover.png");
+}
+
+QComboBox
+{
+    border: 1px solid #454545;
+    background-color: #1f1f1f;
+    color: #ffffff;
 }

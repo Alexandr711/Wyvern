@@ -34,6 +34,11 @@
     "Rectangle tooltip": "Прямоугольник",
 
     "Drawing": "Чертёж",
-    "3DTools": "3D Инструменты"
+    "3DTools": "3D Инструменты",
 
+    "Line": "Линия",
+    "Arc": "Дуга",
+    "Polyline": "Полилиния",
+    "Circle": "Круг",
+    "Rectangle": "Прямоугольник"
 }

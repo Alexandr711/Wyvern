@@ -119,6 +119,12 @@ void Gui::setTitleOnWidgets()
     cadToolBar->setPlanString(tempJsonObject["Drawing"].toString());
     cadToolBar->setCad3DToolsString(tempJsonObject["3DTools"].toString());
     cadToolBar->setTabsText();
+
+    cad3DToolsWidget->setToolTipLineButton(tempJsonObject["Line"].toString());
+    cad3DToolsWidget->setToolTipArcButton(tempJsonObject["Arc"].toString());
+    cad3DToolsWidget->setToolTipPolylineButton(tempJsonObject["Polyline"].toString());
+    cad3DToolsWidget->setToolTipCircleButton(tempJsonObject["Circle"].toString());
+    cad3DToolsWidget->setToolTipRectangleButton(tempJsonObject["Rectangle"].toString());
 }
 
 
