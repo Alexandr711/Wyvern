@@ -1,0 +1,57 @@
+QToolButton
+{
+    background-color: #f8f8f8;
+    border: 1px solid #f8f8f8;
+    margin: 1px;
+    padding: 2px;
+}
+
+QToolButton#circleButton
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Circle.png");
+}
+
+QToolButton#circleButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/CircleHover.png");
+}
+
+QToolButton#lineButton
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Line.png");
+}
+
+QToolButton#lineButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/LineHover.png");
+}
+
+QToolButton#arcButton
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Arc.png");
+}
+
+QToolButton#arcButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/ArcHover.png");
+}
+
+QToolButton#polyLineButton
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/PolyLine.png");
+}
+
+QToolButton#polyLineButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/PolyLineHover.png");
+}
+
+QToolButton#rectangleButton
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Rectangle.png");
+}
+
+QToolButton#rectangleButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/RectangleHover.png");
+}

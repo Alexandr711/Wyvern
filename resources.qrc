@@ -31,6 +31,26 @@
         <file>Src/Ui/Icons/LightThemeIcons/UndoHover.png</file>
         <file>Src/Ui/Icons/DarkThemeIcons/Separator.png</file>
         <file>Src/Ui/Icons/LightThemeIcons/Separator.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/Circle.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/CircleHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Circle.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/CircleHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/Line.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/LineHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Line.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/LineHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/Arc.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/ArcHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/PolyLine.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/PolyLineHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/Rectangle.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/RectangleHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Arc.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/ArcHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/PolyLine.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/PolyLineHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Rectangle.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/RectangleHover.png</file>
     </qresource>
     <qresource prefix="/ColorThemes">
         <file>Src/Ui/Styles/DarkStyle/DarkStyle.json</file>
@@ -45,5 +65,8 @@
         <file>Src/Ui/Styles/LightStyle/CADToolBar.qss</file>
         <file>Src/Ui/Styles/DarkStyle/CAD3DFigureWidget.qss</file>
         <file>Src/Ui/Styles/LightStyle/CAD3DFigureWidget.qss</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>Src/Ui/Icons/Light3DToolsIcons/RectangleHover.png</file>
     </qresource>
 </RCC>

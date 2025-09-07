@@ -24,6 +24,9 @@ CAD3DToolsWidget::CAD3DToolsWidget(QWidget *parent)
 
     lineButton->setObjectName("lineButton");
     arcButton->setObjectName("arcButton");
+    polylineButton->setObjectName("polyLineButton");
+    circleButton->setObjectName("circleButton");
+    rectangleButton->setObjectName("rectangleButton");
 }
 
 CAD3DToolsWidget::~CAD3DToolsWidget()
@@ -55,20 +58,13 @@ void CAD3DToolsWidget::setItems()
     mainHBoxLayout->addLayout(primitiveGridLayout, Qt::LeftToRight);
     mainHBoxLayout->setContentsMargins(8, 2, 0, 0);
     primitiveGridLayout->setContentsMargins(0, 0, 0, 0);
-    primitiveGridLayout->setSpacing(2);
+    primitiveGridLayout->setSpacing(0);
 
     primitiveGridLayout->addWidget(lineButton, 0, 0);
     primitiveGridLayout->addWidget(arcButton, 0, 1);
     primitiveGridLayout->addWidget(polylineButton, 0, 2);
     primitiveGridLayout->addWidget(circleButton, 1, 0);
     primitiveGridLayout->addWidget(rectangleButton, 1, 1);
-
-    lineButton->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Expanding);
-    arcButton->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Expanding);
-    polylineButton->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Expanding);
-    circleButton->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Expanding);
-    rectangleButton->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Expanding);
-
 
     mainHBoxLayout->addWidget(separator);
 
@@ -82,6 +78,6 @@ void CAD3DToolsWidget::setItems()
 
     figure3DGridLayout->addWidget(holeButton, 0, 0);
     figure3DGridLayout->addWidget(pullButton, 1 ,0);
-    figure3DGridLayout->addWidget(chamferButton, 2, 0);
+    figure3DGridLayout->addWidget(chamferButton, 0, 1);
     mainHBoxLayout->addStretch();
 }
