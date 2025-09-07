@@ -3,6 +3,7 @@ QToolBar
     background-color: #f8f8f8;
     color: white;
     border: none;
+    border-bottom: 1px solid #e1e1e1;
 }
 
 QTabWidget#toolTabWidget
@@ -12,10 +13,27 @@ QTabWidget#toolTabWidget
     border: none;
 }
 
+QTabWidget::pane { 
+    border-top: 1px solid #e1e1e1;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
 QTabBar::tab
 {
     background-color: #f8f8f8;
     color: black;
-    border: none;
+    border: 1px solid #e1e1e1;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
+QTabBar::tab:selected
+{
+    background-color: #e1e1e1;
+    color: black;
+    border: 1px solid #e1e1e1;
+}

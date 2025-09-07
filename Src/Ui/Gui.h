@@ -11,12 +11,12 @@ class FileMenu;
 class MainToolBar;
 class HelpMenu;
 class Settings;
-
-//dialogs classes
 class OpenDialog;
 class CreateDialog;
 class CADToolBar;
 class CAD3DToolsWidget;
+class DrawToolsWidget;
+
 
 class Gui: QObject
 {
@@ -61,6 +61,7 @@ private:
     //CADToolBar
     CADToolBar* cadToolBar;
     CAD3DToolsWidget* cad3DToolsWidget;
+    DrawToolsWidget* drawToolsWidget;
 };
 
 #endif // GUI_H

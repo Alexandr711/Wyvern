@@ -13,6 +13,7 @@
 #include "Dialogs/OpenDialog.h"
 #include "ToolBars/CADToolBar.h"
 #include "ToolBars/CADTools/CAD3DToolsWidget.h"
+#include "ToolBars/CADTools/DrawToolsWidget.h"
 
 
 Gui::Gui()
@@ -31,10 +32,12 @@ Gui::Gui()
 
     cadToolBar = new CADToolBar;
     cad3DToolsWidget = new CAD3DToolsWidget;
+    drawToolsWidget = new DrawToolsWidget;
 }
 
 Gui::~Gui()
 {
+    delete drawToolsWidget;
     delete cad3DToolsWidget;
     delete cadToolBar;
 
@@ -67,6 +70,7 @@ void Gui::setItems()
     mainWindow->addToolBar(cadToolBar);
     cadToolBar->setMovable(false);
     cadToolBar->setItems();
+    cadToolBar->addPlanTab(drawToolsWidget);
     cadToolBar->addCad3DToolsTab(cad3DToolsWidget);
     cad3DToolsWidget->setItems();
 }
@@ -165,6 +169,7 @@ void Gui::setColorTheme()
     fileMenu->setStyleSheet(QString(settings->readQssFile(configJsonObject["Menu"].toString())));
     helpMenu->setStyleSheet(QString(settings->readQssFile(configJsonObject["Menu"].toString())));
     cadToolBar->setStyleSheet(QString(settings->readQssFile(configJsonObject["CADToolBar"].toString())));
+    cad3DToolsWidget->setStyleSheet(QString(settings->readQssFile(configJsonObject["3DToolsTab"].toString())));
 }
 
 

@@ -12,6 +12,7 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Gui)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 
 qt_add_library(UiLib STATIC MenuBar/FileMenu.h MenuBar/FileMenu.cpp
@@ -30,11 +31,13 @@ qt_add_library(UiLib STATIC MenuBar/FileMenu.h MenuBar/FileMenu.cpp
 
              ToolBars/CADToolBar.h ToolBars/CADToolBar.cpp
              ToolBars/CADTools/CAD3DToolsWidget.h ToolBars/CADTools/CAD3DToolsWidget.cpp
+             ToolBars/CADTools/DrawToolsWidget.h ToolBars/CADTools/DrawToolsWidget.cpp
 )
 
 
 target_link_libraries(UiLib PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 target_link_libraries(UiLib PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 target_link_libraries(UiLib PRIVATE Qt${QT_VERSION_MAJOR}::Gui)
+target_link_libraries(UiLib PRIVATE Qt6::Widgets)
 target_link_libraries(UiLib PRIVATE Qt6::Widgets)
 

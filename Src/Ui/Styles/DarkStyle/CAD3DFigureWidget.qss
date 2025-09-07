@@ -1,0 +1,13 @@
+QWidget 
+{
+    margin: 0px;
+    border: none;
+    padding: 0px;
+}
+
+QToolButton
+{
+    background-color: red;
+    margin: 1px;
+}
+

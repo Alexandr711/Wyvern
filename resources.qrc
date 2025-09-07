@@ -43,5 +43,7 @@
         <file>Src/Ui/Styles/LightStyle/Menu.qss</file>
         <file>Src/Ui/Styles/DarkStyle/CADToolBar.qss</file>
         <file>Src/Ui/Styles/LightStyle/CADToolBar.qss</file>
+        <file>Src/Ui/Styles/DarkStyle/CAD3DFigureWidget.qss</file>
+        <file>Src/Ui/Styles/LightStyle/CAD3DFigureWidget.qss</file>
     </qresource>
 </RCC>

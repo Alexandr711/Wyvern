@@ -7,6 +7,7 @@
 #include <QHBoxLayout>
 #include <QGridLayout>
 #include <QLabel>
+#include <QVBoxLayout>
 
 class CAD3DToolsWidget : public QWidget
 {
@@ -34,6 +35,8 @@ private:
     QLabel* separator;
 
     QGridLayout* figure3DGridLayout;
+    QVBoxLayout* figure3DVBoxLayout;
+
     QComboBox* figure3DComboBox;
     QToolButton* holeButton;
     QToolButton* pullButton;

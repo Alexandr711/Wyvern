@@ -30,5 +30,6 @@ void CADToolBar::addCad3DToolsTab(QWidget* cad3dToolsTab)
 
 void CADToolBar::setTabsText()
 {
-    toolTabWidget->setTabText(0, cad3DToolsString);
+    toolTabWidget->setTabText(0, planString);
+    toolTabWidget->setTabText(1, cad3DToolsString);
 }
