@@ -1,0 +1,21 @@
+QToolBar
+{
+    background-color: #f8f8f8;
+    color: white;
+    border: none;
+}
+
+QTabWidget#toolTabWidget
+{
+    background-color: #f8f8f8;
+    color: black;
+    border: none;
+}
+
+QTabBar::tab
+{
+    background-color: #f8f8f8;
+    color: black;
+    border: none;
+}
+

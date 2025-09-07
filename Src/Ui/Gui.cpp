@@ -65,6 +65,7 @@ void Gui::setItems()
 
     //Add CADToolBar
     mainWindow->addToolBar(cadToolBar);
+    cadToolBar->setMovable(false);
     cadToolBar->setItems();
     cadToolBar->addCad3DToolsTab(cad3DToolsWidget);
     cad3DToolsWidget->setItems();
@@ -163,6 +164,7 @@ void Gui::setColorTheme()
     mainToolBar->setStyleSheet(QString(settings->readQssFile(configJsonObject["MainToolBar"].toString())));
     fileMenu->setStyleSheet(QString(settings->readQssFile(configJsonObject["Menu"].toString())));
     helpMenu->setStyleSheet(QString(settings->readQssFile(configJsonObject["Menu"].toString())));
+    cadToolBar->setStyleSheet(QString(settings->readQssFile(configJsonObject["CADToolBar"].toString())));
 }
 
 

@@ -41,5 +41,7 @@
         <file>Src/Ui/Styles/LightStyle/MenuBar.qss</file>
         <file>Src/Ui/Styles/DarkStyle/Menu.qss</file>
         <file>Src/Ui/Styles/LightStyle/Menu.qss</file>
+        <file>Src/Ui/Styles/DarkStyle/CADToolBar.qss</file>
+        <file>Src/Ui/Styles/LightStyle/CADToolBar.qss</file>
     </qresource>
 </RCC>

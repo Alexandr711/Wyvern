@@ -3,6 +3,8 @@
 CADToolBar::CADToolBar(QWidget* parent): QToolBar(parent)
 {
     toolTabWidget = new QTabWidget;
+
+    toolTabWidget->setObjectName("toolTabWidget");
 }
 
 CADToolBar::~CADToolBar()
