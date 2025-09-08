@@ -19,6 +19,7 @@ public:
     ~CAD3DToolsWidget();
 
     void setItems();
+    void setItemsText();
 
     inline void setToolTipLineButton(QString title){lineButton->setToolTip(title);}
     inline void setToolTipArcButton(QString title){arcButton->setToolTip(title);}

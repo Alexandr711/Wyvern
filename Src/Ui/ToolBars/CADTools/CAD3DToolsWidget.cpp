@@ -83,9 +83,19 @@ void CAD3DToolsWidget::setItems()
 
     figure3DComboBox->addItem(sphereIcon, sphereString);
     figure3DComboBox->addItem(cilindrIcon, cilindrString);
-    figure3DComboBox->addItem(parallelogrammIcon, parallelogrammString);
+    figure3DComboBox->addItem(parallelogrammString);
     figure3DComboBox->addItem(coneIcon, coneString);
     figure3DComboBox->addItem(pyramidIcon, pyramidString);
     figure3DComboBox->addItem(torusIcon, torusString);
+}
+
+void CAD3DToolsWidget::setItemsText()
+{
+    figure3DComboBox->setItemText(0, sphereString);
+    figure3DComboBox->setItemText(1, cilindrString);
+    figure3DComboBox->setItemText(2, parallelogrammString);
+    figure3DComboBox->setItemText(3, coneString);
+    figure3DComboBox->setItemText(4, pyramidString);
+    figure3DComboBox->setItemText(5, torusString);
 }
 

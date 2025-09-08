@@ -43,7 +43,8 @@
     "Rectangle": "Rectangle",
 
     "Sphere": "Sphere",
-    "Parallelogram": "Parallelogram",
+    "Cylinder": "Cylinder",
+    "Parallelogramm": "Parallelogramm",
     "Cone": "Conus",
     "Pyramid": "Pyramid",
     "Torus": "Torus"

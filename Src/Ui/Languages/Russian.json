@@ -43,7 +43,8 @@
     "Rectangle": "Прямоугольник",
 
     "Sphere": "Сфера",
-    "Parallelogram": "Параллелограмм",
+    "Cylinder": "Цилиндр",
+    "Parallelogramm": "Параллелограмм",
     "Cone": "Конус",
     "Pyramid": "Пирамида",
     "Torus": "Тор"
