@@ -40,5 +40,11 @@
     "Arc": "Дуга",
     "Polyline": "Полилиния",
     "Circle": "Круг",
-    "Rectangle": "Прямоугольник"
+    "Rectangle": "Прямоугольник",
+
+    "Sphere": "Сфера",
+    "Parallelogram": "Параллелограмм",
+    "Cone": "Конус",
+    "Pyramid": "Пирамида",
+    "Torus": "Тор"
 }

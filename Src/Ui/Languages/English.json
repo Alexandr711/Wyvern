@@ -40,5 +40,11 @@
     "Arc": "Arc",
     "Polyline": "Polyline",
     "Circle": "Circle",
-    "Rectangle": "Rectangle"
+    "Rectangle": "Rectangle",
+
+    "Sphere": "Sphere",
+    "Parallelogram": "Parallelogram",
+    "Cone": "Conus",
+    "Pyramid": "Pyramid",
+    "Torus": "Torus"
 }

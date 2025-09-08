@@ -80,4 +80,12 @@ void CAD3DToolsWidget::setItems()
     figure3DGridLayout->addWidget(pullButton, 1 ,0);
     figure3DGridLayout->addWidget(chamferButton, 0, 1);
     mainHBoxLayout->addStretch();
+
+    figure3DComboBox->addItem(sphereIcon, sphereString);
+    figure3DComboBox->addItem(cilindrIcon, cilindrString);
+    figure3DComboBox->addItem(parallelogrammIcon, parallelogrammString);
+    figure3DComboBox->addItem(coneIcon, coneString);
+    figure3DComboBox->addItem(pyramidIcon, pyramidString);
+    figure3DComboBox->addItem(torusIcon, torusString);
 }
+
