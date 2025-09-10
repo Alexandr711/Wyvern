@@ -1,0 +1,8 @@
+{
+    "Sphere": ":/Images/Src/Ui/Icons/Light3DToolsIcons/Sphere.png",
+    "Cylinder":":/Images/Src/Ui/Icons/Light3DToolsIcons/Cilinder.png",
+    "Parallelepiped": ":/Images/Src/Ui/Icons/Light3DToolsIcons/Parallelogramm.png",
+    "Cone": ":/Images/Src/Ui/Icons/Light3DToolsIcons/Cone.png",
+    "Pyramid": ":/Images/Src/Ui/Icons/Light3DToolsIcons/Pyramide.png",
+    "Torus": ":/Images/Src/Ui/Icons/Light3DToolsIcons/Torus.png"
+}

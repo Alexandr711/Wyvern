@@ -81,21 +81,31 @@ void CAD3DToolsWidget::setItems()
     figure3DGridLayout->addWidget(chamferButton, 0, 1);
     mainHBoxLayout->addStretch();
 
-    figure3DComboBox->addItem(sphereIcon, sphereString);
-    figure3DComboBox->addItem(cilindrIcon, cilindrString);
-    figure3DComboBox->addItem(parallelogrammString);
-    figure3DComboBox->addItem(coneIcon, coneString);
-    figure3DComboBox->addItem(pyramidIcon, pyramidString);
-    figure3DComboBox->addItem(torusIcon, torusString);
+    figure3DComboBox->addItem(QIcon(sphereIcon), sphereString);
+    figure3DComboBox->addItem(QIcon(cilindrIcon), cilindrString);
+    figure3DComboBox->addItem(QIcon(parallelepipedIcon), parallelepipedString);
+    figure3DComboBox->addItem(QIcon(coneIcon), coneString);
+    figure3DComboBox->addItem(QIcon(pyramidIcon), pyramidString);
+    figure3DComboBox->addItem(QIcon(torusIcon), torusString);
 }
 
 void CAD3DToolsWidget::setItemsText()
 {
     figure3DComboBox->setItemText(0, sphereString);
     figure3DComboBox->setItemText(1, cilindrString);
-    figure3DComboBox->setItemText(2, parallelogrammString);
+    figure3DComboBox->setItemText(2, parallelepipedString);
     figure3DComboBox->setItemText(3, coneString);
     figure3DComboBox->setItemText(4, pyramidString);
     figure3DComboBox->setItemText(5, torusString);
+}
+
+void CAD3DToolsWidget::setItemsIcons()
+{
+    figure3DComboBox->setItemIcon(0, QIcon(sphereIcon));
+    figure3DComboBox->setItemIcon(1, QIcon(cilindrIcon));
+    figure3DComboBox->setItemIcon(2, QIcon(parallelepipedIcon));
+    figure3DComboBox->setItemIcon(3, QIcon(coneIcon));
+    figure3DComboBox->setItemIcon(4, QIcon(pyramidIcon));
+    figure3DComboBox->setItemIcon(5, QIcon(torusIcon));
 }
 

@@ -3,5 +3,6 @@
     "MainToolBar": ":/ColorThemes/Src/Ui/Styles/LightStyle/MainToolBar.qss",
     "Menu" : ":/ColorThemes/Src/Ui/Styles/LightStyle/Menu.qss",
     "CADToolBar": ":/ColorThemes/Src/Ui/Styles/LightStyle/CADToolBar.qss",
-    "3DToolsTab":":/ColorThemes/Src/Ui/Styles/LightStyle/CAD3DFigureWidget.qss"
+    "3DToolsTab": ":/ColorThemes/Src/Ui/Styles/LightStyle/CAD3DFigureWidget.qss",
+    "FigureComboBox": ":/ColorThemes/Src/Ui/Styles/LightStyle/FigureComboBox.json"
 }

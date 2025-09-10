@@ -51,6 +51,26 @@
         <file>Src/Ui/Icons/Light3DToolsIcons/PolyLineHover.png</file>
         <file>Src/Ui/Icons/Light3DToolsIcons/Rectangle.png</file>
         <file>Src/Ui/Icons/Light3DToolsIcons/RectangleHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/Cilinder.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/Cone.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/Hole.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/HoleHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/Parallelogramm.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/Push.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/PushHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/Pyramide.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/Sphere.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/Torus.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Cilinder.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Cone.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Hole.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/HoleHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Parallelogramm.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Push.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/PushHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Pyramide.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Sphere.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Torus.png</file>
     </qresource>
     <qresource prefix="/ColorThemes">
         <file>Src/Ui/Styles/DarkStyle/DarkStyle.json</file>
@@ -65,8 +85,7 @@
         <file>Src/Ui/Styles/LightStyle/CADToolBar.qss</file>
         <file>Src/Ui/Styles/DarkStyle/CAD3DFigureWidget.qss</file>
         <file>Src/Ui/Styles/LightStyle/CAD3DFigureWidget.qss</file>
-    </qresource>
-    <qresource prefix="/">
-        <file>Src/Ui/Icons/Light3DToolsIcons/RectangleHover.png</file>
+        <file>Src/Ui/Styles/DarkStyle/FigureComboBox.json</file>
+        <file>Src/Ui/Styles/LightStyle/FigureComboBox.json</file>
     </qresource>
 </RCC>

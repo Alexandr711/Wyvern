@@ -1,0 +1,8 @@
+{
+    "Sphere": ":/Images/Src/Ui/Icons/Dark3DToolsIcons/Sphere.png",
+    "Cylinder": ":/Images/Src/Ui/Icons/Dark3DToolsIcons/Cilinder.png",
+    "Parallelepiped": ":/Images/Src/Ui/Icons/Dark3DToolsIcons/Parallelogramm.png",
+    "Cone": ":/Images/Src/Ui/Icons/Dark3DToolsIcons/Cone.png",
+    "Pyramid": ":/Images/Src/Ui/Icons/Dark3DToolsIcons/Pyramide.png",
+    "Torus": ":/Images/Src/Ui/Icons/Dark3DToolsIcons/Torus.png"
+}

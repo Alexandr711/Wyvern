@@ -20,6 +20,7 @@ public:
 
     void setItems();
     void setItemsText();
+    void setItemsIcons();
 
     inline void setToolTipLineButton(QString title){lineButton->setToolTip(title);}
     inline void setToolTipArcButton(QString title){arcButton->setToolTip(title);}
@@ -29,14 +30,14 @@ public:
 
     inline void setSphereString(QString title){sphereString = title;}
     inline void setCilindrString(QString title){cilindrString = title;}
-    inline void setParallelogrammString(QString title){parallelogrammString = title;}
+    inline void setParallelepipedString(QString title){parallelepipedString = title;}
     inline void setConeString(QString title){coneString = title;}
     inline void setPyramidString(QString title){pyramidString = title;}
     inline void setTorusString(QString title){torusString = title;}
 
     inline void setSphereIcon(QString title){sphereIcon = title;}
     inline void setCilindrIcon(QString title){cilindrIcon = title;}
-    inline void setParallelogrammIcon(QString title){parallelogrammIcon = title;}
+    inline void setParallelepipedIcon(QString title){parallelepipedIcon = title;}
     inline void setConeIcon(QString title){coneIcon = title;}
     inline void setPyramidIcon(QString title){pyramidIcon = title;}
     inline void setTorusIcon(QString title){torusIcon = title;}
@@ -64,14 +65,14 @@ private:
     //Names and Icons strings of figure3DComboBox
     QString sphereString;
     QString cilindrString;
-    QString parallelogrammString;
+    QString parallelepipedString;
     QString coneString;
     QString pyramidString;
     QString torusString;
 
     QString sphereIcon;
     QString cilindrIcon;
-    QString parallelogrammIcon;
+    QString parallelepipedIcon;
     QString coneIcon;
     QString pyramidIcon;
     QString torusIcon;
