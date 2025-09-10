@@ -87,5 +87,7 @@
         <file>Src/Ui/Styles/LightStyle/CAD3DFigureWidget.qss</file>
         <file>Src/Ui/Styles/DarkStyle/FigureComboBox.json</file>
         <file>Src/Ui/Styles/LightStyle/FigureComboBox.json</file>
+        <file>Src/Ui/Styles/DarkStyle/MainWindow.qss</file>
+        <file>Src/Ui/Styles/LightStyle/MainWindow.qss</file>
     </qresource>
 </RCC>

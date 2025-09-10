@@ -1,4 +1,5 @@
 {
+    "MainWindow": ":/ColorThemes/Src/Ui/Styles/DarkStyle/MainWindow.qss",
     "MenuBar": ":/ColorThemes/Src/Ui/Styles/DarkStyle/MenuBar.qss",
     "MainToolBar": ":/ColorThemes/Src/Ui/Styles/DarkStyle/MainToolBar.qss",
     "Menu" : ":/ColorThemes/Src/Ui/Styles/DarkStyle/Menu.qss",

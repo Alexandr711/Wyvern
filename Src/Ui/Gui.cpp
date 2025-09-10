@@ -179,6 +179,7 @@ void Gui::setColorTheme()
 
 
     //Set style sheets
+    mainWindow->setStyleSheet(QString(settings->readQssFile(configJsonObject["MainWindow"].toString())));
     menuBar->setStyleSheet(QString(settings->readQssFile(configJsonObject["MenuBar"].toString())));
     mainToolBar->setStyleSheet(QString(settings->readQssFile(configJsonObject["MainToolBar"].toString())));
     fileMenu->setStyleSheet(QString(settings->readQssFile(configJsonObject["Menu"].toString())));
@@ -186,7 +187,6 @@ void Gui::setColorTheme()
     cadToolBar->setStyleSheet(QString(settings->readQssFile(configJsonObject["CADToolBar"].toString())));
     cad3DToolsWidget->setStyleSheet(QString(settings->readQssFile(configJsonObject["3DToolsTab"].toString())));
 
-    qDebug() <<configJsonObject["FigureComboBox"].toString();
     settings->readJsonFile(configJsonObject["FigureComboBox"].toString());
     QJsonObject FigureComboBoxIconJson = settings->getJsonObject();
     cad3DToolsWidget->setSphereIcon(FigureComboBoxIconJson["Sphere"].toString());

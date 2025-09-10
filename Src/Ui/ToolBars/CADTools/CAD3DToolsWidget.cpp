@@ -87,6 +87,7 @@ void CAD3DToolsWidget::setItems()
     figure3DComboBox->addItem(QIcon(coneIcon), coneString);
     figure3DComboBox->addItem(QIcon(pyramidIcon), pyramidString);
     figure3DComboBox->addItem(QIcon(torusIcon), torusString);
+    figure3DComboBox->setIconSize(QSize(20, 20));
 }
 
 void CAD3DToolsWidget::setItemsText()
