@@ -27,6 +27,8 @@ CAD3DToolsWidget::CAD3DToolsWidget(QWidget *parent)
     polylineButton->setObjectName("polyLineButton");
     circleButton->setObjectName("circleButton");
     rectangleButton->setObjectName("rectangleButton");
+    holeButton->setObjectName("holeButton");
+    pullButton->setObjectName("pullButton");
 }
 
 CAD3DToolsWidget::~CAD3DToolsWidget()

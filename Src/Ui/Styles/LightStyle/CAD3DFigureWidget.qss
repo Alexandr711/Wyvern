@@ -13,6 +13,14 @@ QToolTip
     border: 1px solid #616161;
 }
 
+QToolButton
+{
+    padding: 0px;
+    margin: 1px;
+    min-width: 20;
+    min-height: 20px;
+}
+
 QToolButton#circleButton
 {
     image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Circle.png");
@@ -61,6 +69,26 @@ QToolButton#rectangleButton
 QToolButton#rectangleButton:hover
 {
     image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/RectangleHover.png");
+}
+
+QToolButton#holeButton
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Hole.png");
+}
+
+QToolButton#holeButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/HoleHover.png");
+}
+
+QToolButton#pullButton
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Push.png");
+}
+
+QToolButton#pullButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/PushHover.png");
 }
 
 QComboBox

@@ -13,6 +13,14 @@ QToolTip
     border: 1px solid #181818;
 }
 
+QToolButton
+{
+    padding: 0px;
+    margin: 1px;
+    min-width: 20;
+    min-height: 20px;
+}
+
 QToolButton#circleButton
 {
     image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/Circle.png");
@@ -63,6 +71,26 @@ QToolButton#rectangleButton:hover
     image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/RectangleHover.png");
 }
 
+QToolButton#holeButton
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/Hole.png");
+}
+
+QToolButton#holeButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/HoleHover.png");
+}
+
+QToolButton#pullButton
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/Push.png");
+}
+
+QToolButton#pullButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/PushHover.png");
+}
+
 QComboBox
 {
     min-width: 130px;
@@ -75,14 +103,14 @@ QComboBox
     padding-bottom: 3px;  
 }
 
-
-QComboBox QAbstractItemView {
+QComboBox QAbstractItemView{
     background-color: #1f1f1f;
     border: 1px solid #454545;
     color: #ffffff;
     outline: 0px; /*Go to dotted line*/
 }
 QComboBox QAbstractItemView::item {
+    background-color: transparent;
     padding-left: 5px;
     padding-right: 15px;
     padding-top: 3px;
