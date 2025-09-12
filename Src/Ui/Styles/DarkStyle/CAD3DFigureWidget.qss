@@ -103,13 +103,15 @@ QComboBox
     padding-bottom: 3px;  
 }
 
-QComboBox QAbstractItemView{
+QComboBox QAbstractItemView
+{
     background-color: #1f1f1f;
     border: 1px solid #454545;
     color: #ffffff;
     outline: 0px; /*Go to dotted line*/
 }
-QComboBox QAbstractItemView::item {
+QComboBox QAbstractItemView::item 
+{
     background-color: transparent;
     padding-left: 5px;
     padding-right: 15px;
@@ -117,14 +119,76 @@ QComboBox QAbstractItemView::item {
     padding-bottom: 3px;
 }
 
-QComboBox QAbstractItemView::item:hover{
+QComboBox QAbstractItemView::item:hover
+{
     background-color:#454545;
     color: #ffffff;
     border: none;
 }
 
-QComboBox QAbstractItemView::item:selected{
+QComboBox QAbstractItemView::item:selected
+{
     background-color:#454545; 
     color: #ffffff;
     border: none;
+}
+
+QToolButton#xyButton
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XY.png");
+}
+
+QToolButton#xyButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XYHover.png");
+}
+
+QToolButton#xzButton
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XZ.png");
+}
+
+QToolButton#xzButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XZHover.png");
+}
+
+QToolButton#yzButton
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/YZ.png");
+}
+
+QToolButton#yzButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/YZHover.png");
+}
+
+QToolButton#xyzButton
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XYZ.png");
+}
+
+QToolButton#xyzButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XYZHover.png");
+}
+
+QToolButton#chamferButton
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/Chamfer.png");
+}
+
+QToolButton#chamferButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/ChamferHover.png");
+}
+
+QToolButton#grooveButton
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/Groove.png");
+}
+
+QToolButton#grooveButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/GrooveHover.png");
 }

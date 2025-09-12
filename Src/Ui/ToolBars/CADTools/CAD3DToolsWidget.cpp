@@ -21,6 +21,13 @@ CAD3DToolsWidget::CAD3DToolsWidget(QWidget *parent)
     holeButton = new QToolButton;
     pullButton = new QToolButton;
     chamferButton = new QToolButton;
+    grooveButton = new QToolButton;
+
+    xyzHBoxLayout = new QHBoxLayout;
+    xyButton = new QToolButton;
+    xzButton = new QToolButton;
+    yzButton = new QToolButton;
+    xyzButton = new QToolButton;
 
     lineButton->setObjectName("lineButton");
     arcButton->setObjectName("arcButton");
@@ -29,10 +36,23 @@ CAD3DToolsWidget::CAD3DToolsWidget(QWidget *parent)
     rectangleButton->setObjectName("rectangleButton");
     holeButton->setObjectName("holeButton");
     pullButton->setObjectName("pullButton");
+    chamferButton->setObjectName("chamferButton");
+    grooveButton->setObjectName("grooveButton");
+    xyButton->setObjectName("xyButton");
+    xzButton->setObjectName("xzButton");
+    yzButton->setObjectName("yzButton");
+    xyzButton->setObjectName("xyzButton");
 }
 
 CAD3DToolsWidget::~CAD3DToolsWidget()
 {
+    delete xyzButton;
+    delete yzButton;
+    delete xzButton;
+    delete xyButton;
+    delete xyzHBoxLayout;
+
+    delete grooveButton;
     delete chamferButton;
     delete pullButton;
     delete holeButton;
@@ -72,7 +92,13 @@ void CAD3DToolsWidget::setItems()
 
     mainHBoxLayout->addLayout(figure3DVBoxLayout);
     figure3DVBoxLayout->addWidget(figure3DComboBox);
-    figure3DVBoxLayout->addStretch();
+    figure3DVBoxLayout->addLayout(xyzHBoxLayout);
+    xyzHBoxLayout->addWidget(xyButton);
+    xyzHBoxLayout->addWidget(xzButton);
+    xyzHBoxLayout->addWidget(yzButton);
+    xyzHBoxLayout->addWidget(xyzButton);
+    figure3DVBoxLayout->setContentsMargins(0, 0, 0, 0);
+    xyzHBoxLayout->setContentsMargins(0, 0, 0, 0);
 
     mainHBoxLayout->addLayout(figure3DGridLayout);
     figure3DGridLayout->setContentsMargins(0, 0, 0, 0);
@@ -81,6 +107,7 @@ void CAD3DToolsWidget::setItems()
     figure3DGridLayout->addWidget(holeButton, 0, 0);
     figure3DGridLayout->addWidget(pullButton, 1 ,0);
     figure3DGridLayout->addWidget(chamferButton, 0, 1);
+    figure3DGridLayout->addWidget(grooveButton, 1, 1);
     mainHBoxLayout->addStretch();
 
     figure3DComboBox->addItem(QIcon(sphereIcon), sphereString);

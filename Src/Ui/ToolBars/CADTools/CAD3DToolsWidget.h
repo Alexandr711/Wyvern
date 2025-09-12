@@ -54,13 +54,20 @@ private:
 
     QLabel* separator;
 
-    QGridLayout* figure3DGridLayout;
-    QVBoxLayout* figure3DVBoxLayout;
 
+    QVBoxLayout* figure3DVBoxLayout;
     QComboBox* figure3DComboBox;
+    QHBoxLayout* xyzHBoxLayout;
+    QToolButton* xyButton;
+    QToolButton* xzButton;
+    QToolButton* yzButton;
+    QToolButton* xyzButton;
+
+    QGridLayout* figure3DGridLayout;
     QToolButton* holeButton;
     QToolButton* pullButton;
     QToolButton* chamferButton;
+    QToolButton* grooveButton;
 
     //Names and Icons strings of figure3DComboBox
     QString sphereString;

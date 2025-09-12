@@ -71,6 +71,30 @@
         <file>Src/Ui/Icons/Light3DToolsIcons/Pyramide.png</file>
         <file>Src/Ui/Icons/Light3DToolsIcons/Sphere.png</file>
         <file>Src/Ui/Icons/Light3DToolsIcons/Torus.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/XY.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/XYHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/XZ.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/XZHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/YZ.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/YZHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/XYZ.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/XYZHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XY.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XYHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XYZ.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XYZHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XZ.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XZHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/YZ.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/YZHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/Chamfer.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/ChamferHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/Groove.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/GrooveHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Chamfer.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/ChamferHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Groove.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/GrooveHover.png</file>
     </qresource>
     <qresource prefix="/ColorThemes">
         <file>Src/Ui/Styles/DarkStyle/DarkStyle.json</file>
