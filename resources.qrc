@@ -134,6 +134,14 @@
         <file>Src/Ui/Icons/Light3DToolsIcons/XZFHover.png</file>
         <file>Src/Ui/Icons/Light3DToolsIcons/YZF.png</file>
         <file>Src/Ui/Icons/Light3DToolsIcons/YZFHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XYF.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XYFHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/XYF.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/XYFHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/XZF.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/XZFHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/YZF.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/YZFHover.png</file>
     </qresource>
     <qresource prefix="/ColorThemes">
         <file>Src/Ui/Styles/DarkStyle/DarkStyle.json</file>

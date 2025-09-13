@@ -1,10 +1,13 @@
 QToolButton
 {
-    background-color:#181818;
+    background-color: #181818;
     border: 1px solid #181818;
     margin: 1px;
     padding: 2px;
+    min-width: 20;
+    min-height: 20px;
 }
+
 
 QToolTip
 {
@@ -138,12 +141,12 @@ QToolButton#xyButton:hover
 
 QToolButton#xyFButton
 {
-    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XY.png");
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XYF.png");
 }
 
 QToolButton#xyFButton:hover
 {
-    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XYHover.png");
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XYFHover.png");
 }
 
 QToolButton#xzButton
@@ -154,6 +157,16 @@ QToolButton#xzButton
 QToolButton#xzButton:hover
 {
     image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XZHover.png");
+}
+
+QToolButton#xzFButton
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XZF.png");
+}
+
+QToolButton#xzFButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XZFHover.png");
 }
 
 QToolButton#yzButton
@@ -168,12 +181,12 @@ QToolButton#yzButton:hover
 
 QToolButton#yzFButton
 {
-    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/YZ.png");
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/YZF.png");
 }
 
 QToolButton#yzFButton:hover
 {
-    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/YZHover.png");
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/YZFHover.png");
 }
 
 QToolButton#xyzButton
