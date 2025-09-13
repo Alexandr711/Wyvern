@@ -17,7 +17,6 @@ CAD3DToolsWidget::CAD3DToolsWidget(QWidget *parent)
     figure3DGridLayout = new QGridLayout;
     figure3DVBoxLayout = new QVBoxLayout;
 
-    figure3DComboBox = new QComboBox;
     holeButton = new QToolButton;
     pullButton = new QToolButton;
     chamferButton = new QToolButton;
@@ -28,6 +27,17 @@ CAD3DToolsWidget::CAD3DToolsWidget(QWidget *parent)
     xzButton = new QToolButton;
     yzButton = new QToolButton;
     xyzButton = new QToolButton;
+    xyFButton = new QToolButton;
+    xzFButton = new QToolButton;
+    yzFButton = new QToolButton;
+
+    figure3DHBoxLayout = new QHBoxLayout;
+    sphereButton = new QToolButton;
+    parallelepipedButton = new QToolButton;
+    cilinderButton = new QToolButton;
+    coneButton = new QToolButton;
+    pyramideButton = new QToolButton;
+    torusButton = new QToolButton;
 
     lineButton->setObjectName("lineButton");
     arcButton->setObjectName("arcButton");
@@ -42,10 +52,25 @@ CAD3DToolsWidget::CAD3DToolsWidget(QWidget *parent)
     xzButton->setObjectName("xzButton");
     yzButton->setObjectName("yzButton");
     xyzButton->setObjectName("xyzButton");
+    xyFButton->setObjectName("xyFButton");
+    xzFButton->setObjectName("xzFButton");
+    yzFButton->setObjectName("yzFButton");
 }
 
 CAD3DToolsWidget::~CAD3DToolsWidget()
 {
+    delete torusButton;
+    delete pyramideButton;
+    delete coneButton;
+    delete cilinderButton;
+    delete parallelepipedButton;
+    delete sphereButton;
+    delete figure3DHBoxLayout;
+
+    delete yzFButton;
+    delete xzFButton;
+    delete xyFButton;
+
     delete xyzButton;
     delete yzButton;
     delete xzButton;
@@ -56,7 +81,6 @@ CAD3DToolsWidget::~CAD3DToolsWidget()
     delete chamferButton;
     delete pullButton;
     delete holeButton;
-    delete figure3DComboBox;
 
     delete figure3DVBoxLayout;
     delete figure3DGridLayout;
@@ -91,11 +115,14 @@ void CAD3DToolsWidget::setItems()
     mainHBoxLayout->addWidget(separator);
 
     mainHBoxLayout->addLayout(figure3DVBoxLayout);
-    figure3DVBoxLayout->addWidget(figure3DComboBox);
+
     figure3DVBoxLayout->addLayout(xyzHBoxLayout);
     xyzHBoxLayout->addWidget(xyButton);
+    xyzHBoxLayout->addWidget(xyFButton);
     xyzHBoxLayout->addWidget(xzButton);
+    xyzHBoxLayout->addWidget(xzFButton);
     xyzHBoxLayout->addWidget(yzButton);
+    xyzHBoxLayout->addWidget(yzFButton);
     xyzHBoxLayout->addWidget(xyzButton);
     figure3DVBoxLayout->setContentsMargins(0, 0, 0, 0);
     xyzHBoxLayout->setContentsMargins(0, 0, 0, 0);
@@ -109,33 +136,5 @@ void CAD3DToolsWidget::setItems()
     figure3DGridLayout->addWidget(chamferButton, 0, 1);
     figure3DGridLayout->addWidget(grooveButton, 1, 1);
     mainHBoxLayout->addStretch();
-
-    figure3DComboBox->addItem(QIcon(sphereIcon), sphereString);
-    figure3DComboBox->addItem(QIcon(cilindrIcon), cilindrString);
-    figure3DComboBox->addItem(QIcon(parallelepipedIcon), parallelepipedString);
-    figure3DComboBox->addItem(QIcon(coneIcon), coneString);
-    figure3DComboBox->addItem(QIcon(pyramidIcon), pyramidString);
-    figure3DComboBox->addItem(QIcon(torusIcon), torusString);
-    figure3DComboBox->setIconSize(QSize(20, 20));
-}
-
-void CAD3DToolsWidget::setItemsText()
-{
-    figure3DComboBox->setItemText(0, sphereString);
-    figure3DComboBox->setItemText(1, cilindrString);
-    figure3DComboBox->setItemText(2, parallelepipedString);
-    figure3DComboBox->setItemText(3, coneString);
-    figure3DComboBox->setItemText(4, pyramidString);
-    figure3DComboBox->setItemText(5, torusString);
-}
-
-void CAD3DToolsWidget::setItemsIcons()
-{
-    figure3DComboBox->setItemIcon(0, QIcon(sphereIcon));
-    figure3DComboBox->setItemIcon(1, QIcon(cilindrIcon));
-    figure3DComboBox->setItemIcon(2, QIcon(parallelepipedIcon));
-    figure3DComboBox->setItemIcon(3, QIcon(coneIcon));
-    figure3DComboBox->setItemIcon(4, QIcon(pyramidIcon));
-    figure3DComboBox->setItemIcon(5, QIcon(torusIcon));
 }
 

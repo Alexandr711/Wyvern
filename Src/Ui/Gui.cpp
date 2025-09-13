@@ -125,15 +125,6 @@ void Gui::setTitleOnWidgets()
     cad3DToolsWidget->setToolTipPolylineButton(tempJsonObject["Polyline"].toString());
     cad3DToolsWidget->setToolTipCircleButton(tempJsonObject["Circle"].toString());
     cad3DToolsWidget->setToolTipRectangleButton(tempJsonObject["Rectangle"].toString());
-
-    cad3DToolsWidget->setSphereString(tempJsonObject["Sphere"].toString());
-    cad3DToolsWidget->setCilindrString(tempJsonObject["Cylinder"].toString());
-    cad3DToolsWidget->setParallelepipedString(tempJsonObject["Parallelepiped"].toString());
-    cad3DToolsWidget->setConeString(tempJsonObject["Cone"].toString());
-    cad3DToolsWidget->setPyramidString(tempJsonObject["Pyramid"].toString());
-    cad3DToolsWidget->setTorusString(tempJsonObject["Torus"].toString());
-
-    cad3DToolsWidget->setItemsText();
 }
 
 
@@ -188,14 +179,6 @@ void Gui::setColorTheme()
     cad3DToolsWidget->setStyleSheet(QString(settings->readQssFile(configJsonObject["3DToolsTab"].toString())));
 
     settings->readJsonFile(configJsonObject["FigureComboBox"].toString());
-    QJsonObject FigureComboBoxIconJson = settings->getJsonObject();
-    cad3DToolsWidget->setSphereIcon(FigureComboBoxIconJson["Sphere"].toString());
-    cad3DToolsWidget->setCilindrIcon(FigureComboBoxIconJson["Cylinder"].toString());
-    cad3DToolsWidget->setParallelepipedIcon(FigureComboBoxIconJson["Parallelepiped"].toString());
-    cad3DToolsWidget->setConeIcon(FigureComboBoxIconJson["Cone"].toString());
-    cad3DToolsWidget->setPyramidIcon(FigureComboBoxIconJson["Pyramid"].toString());
-    cad3DToolsWidget->setTorusIcon(FigureComboBoxIconJson["Torus"].toString());
-    cad3DToolsWidget->setItemsIcons();
 }
 
 

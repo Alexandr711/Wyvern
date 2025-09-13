@@ -13,13 +13,6 @@ QToolTip
     border: 1px solid #181818;
 }
 
-QToolButton
-{
-    padding: 0px;
-    margin: 1px;
-    min-width: 20;
-    min-height: 20px;
-}
 
 QToolButton#circleButton
 {
@@ -139,6 +132,16 @@ QToolButton#xyButton
 }
 
 QToolButton#xyButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XYHover.png");
+}
+
+QToolButton#xyFButton
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XY.png");
+}
+
+QToolButton#xyFButton:hover
 {
     image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XYHover.png");
 }

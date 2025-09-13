@@ -19,8 +19,7 @@ public:
     ~CAD3DToolsWidget();
 
     void setItems();
-    void setItemsText();
-    void setItemsIcons();
+
 
     inline void setToolTipLineButton(QString title){lineButton->setToolTip(title);}
     inline void setToolTipArcButton(QString title){arcButton->setToolTip(title);}
@@ -28,19 +27,12 @@ public:
     inline void setToolTipCircleButton(QString title){circleButton->setToolTip(title);}
     inline void setToolTipRectangleButton(QString title){rectangleButton->setToolTip(title);}
 
-    inline void setSphereString(QString title){sphereString = title;}
-    inline void setCilindrString(QString title){cilindrString = title;}
-    inline void setParallelepipedString(QString title){parallelepipedString = title;}
-    inline void setConeString(QString title){coneString = title;}
-    inline void setPyramidString(QString title){pyramidString = title;}
-    inline void setTorusString(QString title){torusString = title;}
-
-    inline void setSphereIcon(QString title){sphereIcon = title;}
-    inline void setCilindrIcon(QString title){cilindrIcon = title;}
-    inline void setParallelepipedIcon(QString title){parallelepipedIcon = title;}
-    inline void setConeIcon(QString title){coneIcon = title;}
-    inline void setPyramidIcon(QString title){pyramidIcon = title;}
-    inline void setTorusIcon(QString title){torusIcon = title;}
+    inline void setToolTipSphere(QString title){sphereButton->setToolTip(title);}
+    inline void setToolTipCilindr(QString title){cilinderButton->setToolTip(title);}
+    inline void setToolTipParallelepiped(QString title){parallelepipedButton->setToolTip(title);}
+    inline void setToolTipCone(QString title){coneButton->setToolTip(title);}
+    inline void setToolTipPyramid(QString title){pyramideButton->setToolTip(title);}
+    inline void setToolTipTorus(QString title){torusButton->setToolTip(title);}
 
 private:
     QHBoxLayout* mainHBoxLayout;
@@ -56,12 +48,22 @@ private:
 
 
     QVBoxLayout* figure3DVBoxLayout;
-    QComboBox* figure3DComboBox;
+    QHBoxLayout* figure3DHBoxLayout;
+    QToolButton* cilinderButton;
+    QToolButton* sphereButton;
+    QToolButton* parallelepipedButton;
+    QToolButton* coneButton;
+    QToolButton* pyramideButton;
+    QToolButton* torusButton;
+
     QHBoxLayout* xyzHBoxLayout;
     QToolButton* xyButton;
     QToolButton* xzButton;
     QToolButton* yzButton;
     QToolButton* xyzButton;
+    QToolButton* xyFButton;
+    QToolButton* xzFButton;
+    QToolButton* yzFButton;
 
     QGridLayout* figure3DGridLayout;
     QToolButton* holeButton;
@@ -69,20 +71,6 @@ private:
     QToolButton* chamferButton;
     QToolButton* grooveButton;
 
-    //Names and Icons strings of figure3DComboBox
-    QString sphereString;
-    QString cilindrString;
-    QString parallelepipedString;
-    QString coneString;
-    QString pyramidString;
-    QString torusString;
-
-    QString sphereIcon;
-    QString cilindrIcon;
-    QString parallelepipedIcon;
-    QString coneIcon;
-    QString pyramidIcon;
-    QString torusIcon;
 };
 
 #endif // CAD3DTOOLSWIDGET_H
