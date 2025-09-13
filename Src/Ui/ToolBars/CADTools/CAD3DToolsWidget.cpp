@@ -55,6 +55,7 @@ CAD3DToolsWidget::CAD3DToolsWidget(QWidget *parent)
     xyFButton->setObjectName("xyFButton");
     xzFButton->setObjectName("xzFButton");
     yzFButton->setObjectName("yzFButton");
+    sphereButton->setObjectName("sphereButton");
 }
 
 CAD3DToolsWidget::~CAD3DToolsWidget()
@@ -115,8 +116,18 @@ void CAD3DToolsWidget::setItems()
     mainHBoxLayout->addWidget(separator);
 
     mainHBoxLayout->addLayout(figure3DVBoxLayout);
+    figure3DVBoxLayout->setContentsMargins(0, 0, 0, 0);
+    figure3DVBoxLayout->setSpacing(0);
+
+    figure3DVBoxLayout->addLayout(figure3DHBoxLayout);
+    figure3DHBoxLayout->setContentsMargins(0, 0, 0, 0);
+    figure3DHBoxLayout->setSpacing(0);
+
+    figure3DHBoxLayout->addWidget(sphereButton);
+    figure3DHBoxLayout->addStretch();
 
     figure3DVBoxLayout->addLayout(xyzHBoxLayout);
+
     xyzHBoxLayout->addWidget(xyButton);
     xyzHBoxLayout->addWidget(xyFButton);
     xyzHBoxLayout->addWidget(xzButton);
@@ -124,8 +135,9 @@ void CAD3DToolsWidget::setItems()
     xyzHBoxLayout->addWidget(yzButton);
     xyzHBoxLayout->addWidget(yzFButton);
     xyzHBoxLayout->addWidget(xyzButton);
-    figure3DVBoxLayout->setContentsMargins(0, 0, 0, 0);
     xyzHBoxLayout->setContentsMargins(0, 0, 0, 0);
+    xyzHBoxLayout->setSpacing(0);
+    xyzHBoxLayout->addStretch();
 
     mainHBoxLayout->addLayout(figure3DGridLayout);
     figure3DGridLayout->setContentsMargins(0, 0, 0, 0);
@@ -135,6 +147,6 @@ void CAD3DToolsWidget::setItems()
     figure3DGridLayout->addWidget(pullButton, 0 ,0);
     figure3DGridLayout->addWidget(chamferButton, 0, 1);
     figure3DGridLayout->addWidget(grooveButton, 1, 1);
-    mainHBoxLayout->addStretch();
+    mainHBoxLayout->addStretch(10);
 }
 

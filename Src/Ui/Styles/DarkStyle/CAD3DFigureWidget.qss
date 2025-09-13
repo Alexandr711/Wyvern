@@ -218,3 +218,15 @@ QToolButton#grooveButton:hover
 {
     image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/GrooveHover.png");
 }
+
+
+/*3D Figure*/
+QToolButton#sphereButton
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/Sphere.png");
+}
+
+QToolButton#sphereButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/SphereHover.png");
+}
