@@ -3,6 +3,41 @@
         <file>Src/Ui/Languages/Russian.json</file>
         <file>Src/Ui/Languages/RussianMacOS.json</file>
         <file>Src/Ui/Languages/English.json</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Arc.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/ArcHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Chamfer.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/ChamferHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Cilinder.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Circle.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/CircleHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Cone.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Groove.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/GrooveHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Hole.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/HoleHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Line.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/LineHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Parallelogramm.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/PolyLine.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/PolyLineHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Push.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/PushHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Pyramide.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Rectangle.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/RectangleHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Sphere.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Torus.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XY.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XYHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XYZ.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XYZHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XZ.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XZF.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XZFHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XZHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/YZ.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/YZF.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/YZFHover.png</file>
     </qresource>
     <qresource prefix="/Images">
         <file>Src/Ui/Icons/DarkThemeIcons/File.png</file>
@@ -95,6 +130,10 @@
         <file>Src/Ui/Icons/Light3DToolsIcons/ChamferHover.png</file>
         <file>Src/Ui/Icons/Light3DToolsIcons/Groove.png</file>
         <file>Src/Ui/Icons/Light3DToolsIcons/GrooveHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XZF.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/XZFHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/YZF.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/YZFHover.png</file>
     </qresource>
     <qresource prefix="/ColorThemes">
         <file>Src/Ui/Styles/DarkStyle/DarkStyle.json</file>

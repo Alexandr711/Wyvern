@@ -166,6 +166,16 @@ QToolButton#yzButton:hover
     image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/YZHover.png");
 }
 
+QToolButton#yzFButton
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/YZ.png");
+}
+
+QToolButton#yzFButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/YZHover.png");
+}
+
 QToolButton#xyzButton
 {
     image: url(":/Images/Src/Ui/Icons/Dark3DToolsIcons/XYZ.png");
