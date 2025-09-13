@@ -131,8 +131,8 @@ void CAD3DToolsWidget::setItems()
     figure3DGridLayout->setContentsMargins(0, 0, 0, 0);
     figure3DGridLayout->setSpacing(0);
 
-    figure3DGridLayout->addWidget(holeButton, 0, 0);
-    figure3DGridLayout->addWidget(pullButton, 1 ,0);
+    figure3DGridLayout->addWidget(holeButton, 1, 0);
+    figure3DGridLayout->addWidget(pullButton, 0 ,0);
     figure3DGridLayout->addWidget(chamferButton, 0, 1);
     figure3DGridLayout->addWidget(grooveButton, 1, 1);
     mainHBoxLayout->addStretch();
