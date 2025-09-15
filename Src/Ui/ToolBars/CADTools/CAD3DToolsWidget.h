@@ -34,6 +34,8 @@ public:
     inline void setToolTipPyramid(QString title){pyramideButton->setToolTip(title);}
     inline void setToolTipTorus(QString title){torusButton->setToolTip(title);}
 
+
+
 private:
     QHBoxLayout* mainHBoxLayout;
 
@@ -44,7 +46,8 @@ private:
     QToolButton* circleButton;
     QToolButton* rectangleButton;
 
-    QLabel* separator;
+    QLabel* separatorOne;
+    QLabel* separatorTwo;
 
 
     QVBoxLayout* figure3DVBoxLayout;
@@ -55,6 +58,7 @@ private:
     QToolButton* coneButton;
     QToolButton* pyramideButton;
     QToolButton* torusButton;
+    QToolButton* prismaButton;
 
     QHBoxLayout* xyzHBoxLayout;
     QToolButton* xyButton;
@@ -68,6 +72,8 @@ private:
     QGridLayout* figure3DGridLayout;
     QToolButton* holeButton;
     QToolButton* pullButton;
+
+    QGridLayout* mechanicalEngineringGridLayout;
     QToolButton* chamferButton;
     QToolButton* grooveButton;
 

@@ -125,6 +125,13 @@ void Gui::setTitleOnWidgets()
     cad3DToolsWidget->setToolTipPolylineButton(tempJsonObject["Polyline"].toString());
     cad3DToolsWidget->setToolTipCircleButton(tempJsonObject["Circle"].toString());
     cad3DToolsWidget->setToolTipRectangleButton(tempJsonObject["Rectangle"].toString());
+
+    cad3DToolsWidget->setToolTipSphere(tempJsonObject["Sphere"].toString());
+    cad3DToolsWidget->setToolTipCilindr(tempJsonObject["Cylinder"].toString());
+    cad3DToolsWidget->setToolTipCone(tempJsonObject["Cone"].toString());
+    cad3DToolsWidget->setToolTipParallelepiped(tempJsonObject["Parallelepiped"].toString());
+    cad3DToolsWidget->setToolTipPyramid(tempJsonObject["Pyramid"].toString());
+    cad3DToolsWidget->setToolTipTorus(tempJsonObject["Torus"].toString());
 }
 
 

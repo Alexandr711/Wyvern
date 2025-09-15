@@ -12,7 +12,8 @@ CAD3DToolsWidget::CAD3DToolsWidget(QWidget *parent)
     circleButton = new QToolButton;
     rectangleButton = new QToolButton;
 
-    separator = new QLabel;
+    separatorOne = new QLabel;
+    separatorTwo = new QLabel;
 
     figure3DGridLayout = new QGridLayout;
     figure3DVBoxLayout = new QVBoxLayout;
@@ -38,6 +39,10 @@ CAD3DToolsWidget::CAD3DToolsWidget(QWidget *parent)
     coneButton = new QToolButton;
     pyramideButton = new QToolButton;
     torusButton = new QToolButton;
+    mechanicalEngineringGridLayout = new QGridLayout;
+    prismaButton = new QToolButton;
+
+    separatorOne->setObjectName("separatorOne");
 
     lineButton->setObjectName("lineButton");
     arcButton->setObjectName("arcButton");
@@ -56,10 +61,18 @@ CAD3DToolsWidget::CAD3DToolsWidget(QWidget *parent)
     xzFButton->setObjectName("xzFButton");
     yzFButton->setObjectName("yzFButton");
     sphereButton->setObjectName("sphereButton");
+    parallelepipedButton->setObjectName("parallelepipedButton");
+    cilinderButton->setObjectName("cilinderButton");
+    coneButton->setObjectName("coneButton");
+    pyramideButton->setObjectName("pyramideButton");
+    torusButton->setObjectName("torusButton");
+    prismaButton->setObjectName("prismaButton");
 }
 
 CAD3DToolsWidget::~CAD3DToolsWidget()
 {
+    delete prismaButton;
+    delete mechanicalEngineringGridLayout;
     delete torusButton;
     delete pyramideButton;
     delete coneButton;
@@ -86,7 +99,8 @@ CAD3DToolsWidget::~CAD3DToolsWidget()
     delete figure3DVBoxLayout;
     delete figure3DGridLayout;
 
-    delete separator;
+    delete separatorTwo;
+    delete separatorOne;
 
     delete rectangleButton;
     delete circleButton;
@@ -103,7 +117,7 @@ void CAD3DToolsWidget::setItems()
 {
     setLayout(mainHBoxLayout);
     mainHBoxLayout->addLayout(primitiveGridLayout, Qt::LeftToRight);
-    mainHBoxLayout->setContentsMargins(8, 2, 0, 0);
+    mainHBoxLayout->setContentsMargins(9, 0, 0, 0);
     primitiveGridLayout->setContentsMargins(0, 0, 0, 0);
     primitiveGridLayout->setSpacing(0);
 
@@ -113,7 +127,7 @@ void CAD3DToolsWidget::setItems()
     primitiveGridLayout->addWidget(circleButton, 1, 0);
     primitiveGridLayout->addWidget(rectangleButton, 1, 1);
 
-    mainHBoxLayout->addWidget(separator);
+    mainHBoxLayout->addWidget(separatorOne);
 
     mainHBoxLayout->addLayout(figure3DVBoxLayout);
     figure3DVBoxLayout->setContentsMargins(0, 0, 0, 0);
@@ -123,11 +137,19 @@ void CAD3DToolsWidget::setItems()
     figure3DHBoxLayout->setContentsMargins(0, 0, 0, 0);
     figure3DHBoxLayout->setSpacing(0);
 
+    //Add 3D figure buttons
     figure3DHBoxLayout->addWidget(sphereButton);
+    figure3DHBoxLayout->addWidget(cilinderButton);
+    figure3DHBoxLayout->addWidget(coneButton);
+    figure3DHBoxLayout->addWidget(parallelepipedButton);
+    figure3DHBoxLayout->addWidget(pyramideButton);
+    figure3DHBoxLayout->addWidget(prismaButton);
+    figure3DHBoxLayout->addWidget(torusButton);
     figure3DHBoxLayout->addStretch();
 
     figure3DVBoxLayout->addLayout(xyzHBoxLayout);
 
+    //Add XYZ buttons
     xyzHBoxLayout->addWidget(xyButton);
     xyzHBoxLayout->addWidget(xyFButton);
     xyzHBoxLayout->addWidget(xzButton);
@@ -145,8 +167,15 @@ void CAD3DToolsWidget::setItems()
 
     figure3DGridLayout->addWidget(holeButton, 1, 0);
     figure3DGridLayout->addWidget(pullButton, 0 ,0);
-    figure3DGridLayout->addWidget(chamferButton, 0, 1);
-    figure3DGridLayout->addWidget(grooveButton, 1, 1);
+
+    figure3DGridLayout->setContentsMargins(0, 0, 0, 0);
+    figure3DGridLayout->setSpacing(0);
+
+    mainHBoxLayout->addWidget(separatorTwo);
+    mainHBoxLayout->addLayout(mechanicalEngineringGridLayout);
+    mechanicalEngineringGridLayout->addWidget(chamferButton, 0, 0);
+    mechanicalEngineringGridLayout->addWidget(grooveButton, 1, 0);
+
     mainHBoxLayout->addStretch(10);
 }
 

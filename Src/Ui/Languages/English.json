@@ -47,5 +47,14 @@
     "Parallelepiped": "Parallelepiped",
     "Cone": "Conus",
     "Pyramid": "Pyramid",
-    "Torus": "Torus"
+    "Torus": "Torus",
+    "Prisma": "Prisma",
+
+    "XY Front": "XY Front",
+    "XY Back": "XY Back",
+    "YZ Front": "YZ Front",
+    "YZ Back": "YZ Back",
+    "XZ Front": "XZ Front",
+    "XZ Back": "XZ Back",
+    "XYZ": "XYZ"
 }

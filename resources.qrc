@@ -108,6 +108,27 @@
         <file>Src/Ui/Icons/Dark3DToolsIcons/YZF.png</file>
         <file>Src/Ui/Icons/Dark3DToolsIcons/YZFHover.png</file>
         <file>Src/Ui/Icons/Dark3DToolsIcons/SphereHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/SphereHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/Separator.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Separator.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/CilinderHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/ConeHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/ParallelogrammHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/PyramideHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/QuarterRound.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/QuarterRoundHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/TorusHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/CilinderHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/ConeHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/ParallelogrammHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/PyramideHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/QuarterRound.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/QuarterRoundHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/TorusHover.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/Prisma.png</file>
+        <file>Src/Ui/Icons/Light3DToolsIcons/PrismaHover.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/Prisma.png</file>
+        <file>Src/Ui/Icons/Dark3DToolsIcons/PrismaHover.png</file>
     </qresource>
     <qresource prefix="/ColorThemes">
         <file>Src/Ui/Styles/DarkStyle/DarkStyle.json</file>

@@ -15,6 +15,15 @@ QToolTip
     border: 1px solid #616161;
 }
 
+QLabel
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Separator.png");
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 QToolButton#circleButton
 {
     image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Circle.png");
@@ -85,7 +94,7 @@ QToolButton#pullButton:hover
     image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/PushHover.png");
 }
 
-QComboBox
+/*QComboBox
 {
     min-width: 130px;
     border: 1px solid #d4d4d4;
@@ -101,7 +110,7 @@ QComboBox QAbstractItemView {
     background-color: #ffffff;
     border: 1px solid #d4d4d4;
     color: #000000;
-    outline: 0px; /*Go to dotted line*/
+    outline: 0px;   /*Go to dotted line
 }
 QComboBox QAbstractItemView::item {
     padding-left: 5px;
@@ -114,7 +123,9 @@ QComboBox QAbstractItemView::item:selected{
     color: #000000;
     border: none;
 }
+*/
 
+/*CoordinatesButtons*/
 QToolButton#xyButton
 {
     image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/XY.png");
@@ -190,6 +201,7 @@ QToolButton#chamferButton
     image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Chamfer.png");
 }
 
+/* Technical Buttons*/
 QToolButton#chamferButton:hover
 {
     image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/ChamferHover.png");
@@ -203,4 +215,85 @@ QToolButton#grooveButton
 QToolButton#grooveButton:hover
 {
     image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/GrooveHover.png");
+}
+
+/*3D Figure*/
+QToolButton#sphereButton
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Sphere.png");
+}
+
+QToolButton#sphereButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/SphereHover.png");
+}
+
+QToolButton#parallelepipedButton
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Parallelogramm.png");
+}
+
+QToolButton#parallelepipedButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Parallelogramm.png");
+}
+
+QToolButton#parallelepipedButton
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Parallelogramm.png");
+}
+
+QToolButton#parallelepipedButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/ParallelogrammHover.png");
+}
+
+QToolButton#cilinderButton
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Cilinder.png");
+}
+
+QToolButton#cilinderButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/CilinderHover.png");
+}
+
+QToolButton#coneButton
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Cone.png");
+}
+
+QToolButton#coneButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/ConeHover.png");
+}
+
+QToolButton#pyramideButton
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Pyramide.png");
+}
+
+QToolButton#pyramideButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/PyramideHover.png");
+}
+
+QToolButton#torusButton
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Torus.png");
+}
+
+QToolButton#torusButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/TorusHover.png");
+}
+
+QToolButton#prismaButton
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/Prisma.png");
+}
+
+QToolButton#prismaButton:hover
+{
+    image: url(":/Images/Src/Ui/Icons/Light3DToolsIcons/PrismaHover.png");
 }

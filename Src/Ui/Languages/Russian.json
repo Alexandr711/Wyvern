@@ -47,5 +47,14 @@
     "Parallelepiped": "Параллелепипед",
     "Cone": "Конус",
     "Pyramid": "Пирамида",
-    "Torus": "Тор"
+    "Torus": "Тор",
+    "Prisma": "Призма",
+
+    "XY Front": "XY передняя",
+    "XY Back": "XY задняя",
+    "XZ Front": "XZ передняя",
+    "XZ Back": "XZ задняя",
+    "YZ Front": "YZ передняя",
+    "YZ Back": "YZ задняя",
+    "XYZ": "XYZ"
 }

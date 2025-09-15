@@ -8,6 +8,7 @@ QToolBar
 
 QTabWidget#toolTabWidget
 {
+    max-height: 96;
     background-color: #181818;
     color: white;
     border: none;
